@@ -1,0 +1,16 @@
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.BusinessLogic\bin\Debug\Cinemas.API.BusinessLogic.exe.config
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.BusinessLogic\bin\Debug\Cinemas.API.BusinessLogic.exe
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.BusinessLogic\bin\Debug\Cinemas.API.BusinessLogic.pdb
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.BusinessLogic\bin\Debug\Cinemas.API.Common.exe
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.BusinessLogic\bin\Debug\Cinemas.API.Core.exe
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.BusinessLogic\bin\Debug\Cinemas.API.DataAccess.exe
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.BusinessLogic\bin\Debug\EntityFramework.dll
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.BusinessLogic\bin\Debug\Cinemas.API.Common.pdb
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.BusinessLogic\bin\Debug\Cinemas.API.Core.pdb
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.BusinessLogic\bin\Debug\Cinemas.API.DataAccess.pdb
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.BusinessLogic\bin\Debug\EntityFramework.xml
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.BusinessLogic\obj\Debug\Cinemas.API.BusinessLogic.csprojResolveAssemblyReference.cache
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.BusinessLogic\obj\Debug\Cinemas.API.BusinessLogic.exe
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.BusinessLogic\obj\Debug\Cinemas.API.BusinessLogic.pdb

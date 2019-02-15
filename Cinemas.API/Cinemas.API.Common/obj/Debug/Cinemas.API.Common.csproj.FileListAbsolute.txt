@@ -1,0 +1,14 @@
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.Common\bin\Debug\Cinemas.API.Common.exe.config
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.Common\bin\Debug\Cinemas.API.Common.exe
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.Common\bin\Debug\Cinemas.API.Common.pdb
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.Common\bin\Debug\Cinemas.API.Core.exe
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.Common\bin\Debug\Cinemas.API.DataAccess.exe
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.Common\bin\Debug\EntityFramework.dll
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.Common\bin\Debug\EntityFramework.SqlServer.dll
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.Common\bin\Debug\Cinemas.API.Core.pdb
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.Common\bin\Debug\Cinemas.API.DataAccess.pdb
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.Common\bin\Debug\EntityFramework.xml
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.Common\bin\Debug\EntityFramework.SqlServer.xml
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.Common\obj\Debug\Cinemas.API.Common.csprojResolveAssemblyReference.cache
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.Common\obj\Debug\Cinemas.API.Common.exe
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.Common\obj\Debug\Cinemas.API.Common.pdb
