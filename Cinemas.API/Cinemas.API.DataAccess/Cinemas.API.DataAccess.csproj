@@ -53,8 +53,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\MyContext.cs" />
+    <Compile Include="Migrations\201902150832012_addingProvincies.cs" />
+    <Compile Include="Migrations\201902150832012_addingProvincies.Designer.cs">
+      <DependentUpon>201902150832012_addingProvincies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902151456138_addingProvinces.cs" />
+    <Compile Include="Migrations\201902151456138_addingProvinces.Designer.cs">
+      <DependentUpon>201902151456138_addingProvinces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902151741452_addingCategories.cs" />
+    <Compile Include="Migrations\201902151741452_addingCategories.Designer.cs">
+      <DependentUpon>201902151741452_addingCategories.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\Category.cs" />
     <Compile Include="Model\Province.cs" />
+    <Compile Include="Param\CategoryParam.cs" />
     <Compile Include="Param\ProvinceParam.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -62,6 +76,17 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201902150832012_addingProvincies.resx">
+      <DependentUpon>201902150832012_addingProvincies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902151456138_addingProvinces.resx">
+      <DependentUpon>201902151456138_addingProvinces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902151741452_addingCategories.resx">
+      <DependentUpon>201902151741452_addingCategories.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Cinemas.API.Core\Cinemas.API.Core.csproj">

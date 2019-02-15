@@ -112,8 +112,7 @@ function Delete(Id) {
     });
 }
 
-function Validation() {
-    debugger;
+function ValidationSave() {
     var isAllValid = true;
     if ($('#Name').val() == "" || ($('#Name').val() == " " )) {
         isAllValid = false;
@@ -121,6 +120,17 @@ function Validation() {
     }
     if (isAllValid) {
         Save();
+    }
+}
+
+function ValidationEdit() {
+    var isAllValid = true;
+    if ($('#Name').val() == "" || ($('#Name').val() == " ")) {
+        isAllValid = false;
+        $('#Name').siblings('span.error').css('visibility', 'visible');
+    }
+    if (isAllValid) {
+        Edit();
     }
 }
 

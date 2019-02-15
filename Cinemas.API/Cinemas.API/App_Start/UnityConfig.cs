@@ -19,9 +19,11 @@ namespace Cinemas.API
 
             // this is service area
             container.RegisterType<IProvinceService, ProvinceService>();
+            container.RegisterType<ICategoryService, CategoryService>();
 
             // this is repository area
             container.RegisterType<IProvinceRepository, ProvinceRepository>();
+            container.RegisterType<ICategoryRepository, CategoryRepository>();
 
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }

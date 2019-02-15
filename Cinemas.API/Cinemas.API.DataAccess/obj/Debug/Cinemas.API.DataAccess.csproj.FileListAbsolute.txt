@@ -13,3 +13,4 @@ D:\Bootcamp MII\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAcc
 D:\Bootcamp MII\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.addingProvincies.resources
 D:\Bootcamp MII\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.csproj.GenerateResource.Cache
 D:\Bootcamp MII\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.addingProvinces.resources
+D:\Bootcamp MII\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.addingCategories.resources
