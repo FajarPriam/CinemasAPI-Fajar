@@ -15,5 +15,6 @@ namespace Cinemas.API.DataAccess.Context
         public DbSet<Category> Categories { get; set; }
         public DbSet<Film> Films { get; set; }
         public DbSet<Theater> Theaters { get; set; }
+        public DbSet<Religion> Religions { get; set; }
     }
 }

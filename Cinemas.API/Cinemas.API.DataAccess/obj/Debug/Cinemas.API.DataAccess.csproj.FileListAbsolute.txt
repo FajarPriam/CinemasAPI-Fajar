@@ -33,3 +33,4 @@ D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\obj\D
 D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.addingFilms.resources
 D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.addingRatingCategory.resources
 D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.addingTheaters.resources
+D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.addingReligions.resources

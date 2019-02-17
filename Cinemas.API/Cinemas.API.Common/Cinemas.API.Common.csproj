@@ -57,10 +57,12 @@
     <Compile Include="Repository\ICategoryRepository.cs" />
     <Compile Include="Repository\IFilmRepository.cs" />
     <Compile Include="Repository\IProvinceRepository.cs" />
+    <Compile Include="Repository\IReligionRepository.cs" />
     <Compile Include="Repository\ITheaterRepository.cs" />
     <Compile Include="Repository\Master\CategoryRepository.cs" />
     <Compile Include="Repository\Master\FilmRepository.cs" />
     <Compile Include="Repository\Master\ProvinceRepository.cs" />
+    <Compile Include="Repository\Master\ReligionRepository.cs" />
     <Compile Include="Repository\Master\TheaterRepository.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -22,12 +22,14 @@ namespace Cinemas.API
             container.RegisterType<ICategoryService, CategoryService>();
             container.RegisterType<IFilmService, FilmService>();
             container.RegisterType<ITheaterService, TheaterService>();
+            container.RegisterType<IReligionService, ReligionService>();
 
             // this is repository area
             container.RegisterType<IProvinceRepository, ProvinceRepository>();
             container.RegisterType<ICategoryRepository, CategoryRepository>();
             container.RegisterType<IFilmRepository, FilmRepository>();
             container.RegisterType<ITheaterRepository, TheaterRepository>();
+            container.RegisterType<IReligionRepository, ReligionRepository>();
 
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }
