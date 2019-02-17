@@ -65,10 +65,20 @@
     <Compile Include="Migrations\201902151741452_addingCategories.Designer.cs">
       <DependentUpon>201902151741452_addingCategories.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201902160138532_addingFilms.cs" />
+    <Compile Include="Migrations\201902160138532_addingFilms.Designer.cs">
+      <DependentUpon>201902160138532_addingFilms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902160612213_addingRatingCategory.cs" />
+    <Compile Include="Migrations\201902160612213_addingRatingCategory.Designer.cs">
+      <DependentUpon>201902160612213_addingRatingCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Category.cs" />
+    <Compile Include="Model\Film.cs" />
     <Compile Include="Model\Province.cs" />
     <Compile Include="Param\CategoryParam.cs" />
+    <Compile Include="Param\FilmParam.cs" />
     <Compile Include="Param\ProvinceParam.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,6 +96,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201902151741452_addingCategories.resx">
       <DependentUpon>201902151741452_addingCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902160138532_addingFilms.resx">
+      <DependentUpon>201902160138532_addingFilms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902160612213_addingRatingCategory.resx">
+      <DependentUpon>201902160612213_addingRatingCategory.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -13,5 +13,6 @@ namespace Cinemas.API.DataAccess.Context
         public MyContext() : base("MyContext") { }
         public DbSet<Province> Provinces { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Film> Films { get; set; }
     }
 }
