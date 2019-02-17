@@ -57,9 +57,11 @@
     <Compile Include="Service\ICategoryService.cs" />
     <Compile Include="Service\IFilmService.cs" />
     <Compile Include="Service\IProvinceService.cs" />
+    <Compile Include="Service\ITheaterService.cs" />
     <Compile Include="Service\Master\CategoryService.cs" />
     <Compile Include="Service\Master\FilmService.cs" />
     <Compile Include="Service\Master\ProvinceService.cs" />
+    <Compile Include="Service\Master\TheaterService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
