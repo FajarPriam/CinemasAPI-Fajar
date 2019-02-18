@@ -11,7 +11,7 @@ namespace Cinemas.API.DataAccess.Model
     {
         public string Title { get; set; }
         public string Rating { get; set; }
-        public byte[] Poster { get; set; }
+        public string Poster { get; set; }
         public string Synopsis { get; set; }
         public string Description { get; set; }
         public string Duration { get; set; }

@@ -54,16 +54,26 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\IAdminService.cs" />
     <Compile Include="Service\ICategoryService.cs" />
     <Compile Include="Service\IFilmService.cs" />
     <Compile Include="Service\IProvinceService.cs" />
+    <Compile Include="Service\IRegencyService.cs" />
     <Compile Include="Service\IReligionService.cs" />
+    <Compile Include="Service\ISubDistrictService.cs" />
     <Compile Include="Service\ITheaterService.cs" />
+    <Compile Include="Service\IUserService.cs" />
+    <Compile Include="Service\IVillageService.cs" />
+    <Compile Include="Service\Master\AdminService.cs" />
     <Compile Include="Service\Master\CategoryService.cs" />
     <Compile Include="Service\Master\FilmService.cs" />
     <Compile Include="Service\Master\ProvinceService.cs" />
+    <Compile Include="Service\Master\RegencyService.cs" />
     <Compile Include="Service\Master\ReligionService.cs" />
+    <Compile Include="Service\Master\SubDistrictService.cs" />
     <Compile Include="Service\Master\TheaterService.cs" />
+    <Compile Include="Service\Master\UserService.cs" />
+    <Compile Include="Service\Master\VillageService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

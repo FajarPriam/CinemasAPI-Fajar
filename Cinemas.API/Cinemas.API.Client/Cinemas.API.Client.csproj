@@ -206,13 +206,18 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdmisController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\FilmsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProvincesController.cs" />
+    <Compile Include="Controllers\RegenciesController.cs" />
     <Compile Include="Controllers\ReligionsController.cs" />
+    <Compile Include="Controllers\SubDistrictsController.cs" />
     <Compile Include="Controllers\TheatersController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\VillagesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -289,6 +294,7 @@
     <Content Include="Scripts\Datatable\sort_both.png" />
     <Content Include="Scripts\Datatable\sort_desc.png" />
     <Content Include="Scripts\Datatable\sort_desc_disabled.png" />
+    <Content Include="Scripts\Master\AdminMaster\RetrievingAdmin.js" />
     <Content Include="Scripts\Master\CategoryMaster\RetrievingCategory.js" />
     <Content Include="Scripts\Datatable\jquery.dataTables.min.css" />
     <Content Include="Scripts\Datatable\jquery.dataTables.min.js" />
@@ -300,8 +306,12 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Master\RegencyMaster\RetrievingRegency.js" />
     <Content Include="Scripts\Master\ReligionMaster\RetrievingReligion.js" />
+    <Content Include="Scripts\Master\SubDistricts\RetrievingSubDistrict.js" />
     <Content Include="Scripts\Master\TheaterMaster\RetrievingTheater.js" />
+    <Content Include="Scripts\Master\UserMaster\RetrievingUser.js" />
+    <Content Include="Scripts\Master\VillageMaster\RetrievingVillage.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\Master\ProvinceMaster\RetrievingProvince.js" />
     <Content Include="Scripts\respond.js" />
@@ -328,6 +338,11 @@
     <Content Include="Views\Films\Index.cshtml" />
     <Content Include="Views\Theaters\Index.cshtml" />
     <Content Include="Views\Religions\Index.cshtml" />
+    <Content Include="Views\Regencies\Index.cshtml" />
+    <Content Include="Views\Admis\Index.cshtml" />
+    <Content Include="Views\SubDistricts\Index.cshtml" />
+    <Content Include="Views\Villages\Index.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

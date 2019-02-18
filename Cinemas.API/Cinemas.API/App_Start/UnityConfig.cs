@@ -19,17 +19,27 @@ namespace Cinemas.API
 
             // this is service area
             container.RegisterType<IProvinceService, ProvinceService>();
+            container.RegisterType<IRegencyService, RegencyService>();
             container.RegisterType<ICategoryService, CategoryService>();
             container.RegisterType<IFilmService, FilmService>();
             container.RegisterType<ITheaterService, TheaterService>();
             container.RegisterType<IReligionService, ReligionService>();
+            container.RegisterType<ISubDistrictService, SubDistrictService>();
+            container.RegisterType<IVillageService, VillageService>();
+            container.RegisterType<IAdminService, AdminService>();
+            container.RegisterType<IUserService, UserService>();
 
             // this is repository area
             container.RegisterType<IProvinceRepository, ProvinceRepository>();
+            container.RegisterType<IRegencyRepository, RegencyRepository>();
             container.RegisterType<ICategoryRepository, CategoryRepository>();
             container.RegisterType<IFilmRepository, FilmRepository>();
             container.RegisterType<ITheaterRepository, TheaterRepository>();
             container.RegisterType<IReligionRepository, ReligionRepository>();
+            container.RegisterType<ISubDistrictRepository, SubDistrictRepository>();
+            container.RegisterType<IVillageRepository, VillageRepository>();
+            container.RegisterType<IAdminRepository, AdminRepository>();
+            container.RegisterType<IUserRepository, UserRepository>();
 
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }
