@@ -53,84 +53,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\MyContext.cs" />
-    <Compile Include="Migrations\201902150832012_addingProvincies.cs" />
-    <Compile Include="Migrations\201902150832012_addingProvincies.Designer.cs">
-      <DependentUpon>201902150832012_addingProvincies.cs</DependentUpon>
+    <Compile Include="Migrations\201902180805027_addingFilmroom.cs" />
+    <Compile Include="Migrations\201902180805027_addingFilmroom.Designer.cs">
+      <DependentUpon>201902180805027_addingFilmroom.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201902151456138_addingProvinces.cs" />
-    <Compile Include="Migrations\201902151456138_addingProvinces.Designer.cs">
-      <DependentUpon>201902151456138_addingProvinces.cs</DependentUpon>
+    <Compile Include="Migrations\201902180828312_dropItem.cs" />
+    <Compile Include="Migrations\201902180828312_dropItem.Designer.cs">
+      <DependentUpon>201902180828312_dropItem.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201902151741452_addingCategories.cs" />
-    <Compile Include="Migrations\201902151741452_addingCategories.Designer.cs">
-      <DependentUpon>201902151741452_addingCategories.cs</DependentUpon>
+    <Compile Include="Migrations\201902180830527_changeFilmRooms.cs" />
+    <Compile Include="Migrations\201902180830527_changeFilmRooms.Designer.cs">
+      <DependentUpon>201902180830527_changeFilmRooms.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201902160138532_addingFilms.cs" />
-    <Compile Include="Migrations\201902160138532_addingFilms.Designer.cs">
-      <DependentUpon>201902160138532_addingFilms.cs</DependentUpon>
+    <Compile Include="Migrations\201902180832390_dropFilmrooms.cs" />
+    <Compile Include="Migrations\201902180832390_dropFilmrooms.Designer.cs">
+      <DependentUpon>201902180832390_dropFilmrooms.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201902160612213_addingRatingCategory.cs" />
-    <Compile Include="Migrations\201902160612213_addingRatingCategory.Designer.cs">
-      <DependentUpon>201902160612213_addingRatingCategory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902170433020_addingTheaters.cs" />
-    <Compile Include="Migrations\201902170433020_addingTheaters.Designer.cs">
-      <DependentUpon>201902170433020_addingTheaters.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902170709331_addingReligions.cs" />
-    <Compile Include="Migrations\201902170709331_addingReligions.Designer.cs">
-      <DependentUpon>201902170709331_addingReligions.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902170913470_addingRegency.cs" />
-    <Compile Include="Migrations\201902170913470_addingRegency.Designer.cs">
-      <DependentUpon>201902170913470_addingRegency.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902171206452_addingSubDistricts.cs" />
-    <Compile Include="Migrations\201902171206452_addingSubDistricts.Designer.cs">
-      <DependentUpon>201902171206452_addingSubDistricts.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902171207480_addingVillages.cs" />
-    <Compile Include="Migrations\201902171207480_addingVillages.Designer.cs">
-      <DependentUpon>201902171207480_addingVillages.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902171342349_addingAdmins.cs" />
-    <Compile Include="Migrations\201902171342349_addingAdmins.Designer.cs">
-      <DependentUpon>201902171342349_addingAdmins.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902172116372_addingUsers.cs" />
-    <Compile Include="Migrations\201902172116372_addingUsers.Designer.cs">
-      <DependentUpon>201902172116372_addingUsers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902180153354_fixingProvinces.cs" />
-    <Compile Include="Migrations\201902180153354_fixingProvinces.Designer.cs">
-      <DependentUpon>201902180153354_fixingProvinces.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902180201217_addingUsersAddress.cs" />
-    <Compile Include="Migrations\201902180201217_addingUsersAddress.Designer.cs">
-      <DependentUpon>201902180201217_addingUsersAddress.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902180328531_changePictiruToString.cs" />
-    <Compile Include="Migrations\201902180328531_changePictiruToString.Designer.cs">
-      <DependentUpon>201902180328531_changePictiruToString.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902180416527_fixTable.cs" />
-    <Compile Include="Migrations\201902180416527_fixTable.Designer.cs">
-      <DependentUpon>201902180416527_fixTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902180427352_addingCinemas.cs" />
-    <Compile Include="Migrations\201902180427352_addingCinemas.Designer.cs">
-      <DependentUpon>201902180427352_addingCinemas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902180430518_addingRooms.cs" />
-    <Compile Include="Migrations\201902180430518_addingRooms.Designer.cs">
-      <DependentUpon>201902180430518_addingRooms.cs</DependentUpon>
+    <Compile Include="Migrations\201902180938455_addingFilmRooms.cs" />
+    <Compile Include="Migrations\201902180938455_addingFilmRooms.Designer.cs">
+      <DependentUpon>201902180938455_addingFilmRooms.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Admin.cs" />
     <Compile Include="Model\Category.cs" />
     <Compile Include="Model\Cinema.cs" />
     <Compile Include="Model\Film.cs" />
-    <Compile Include="Model\Film_Room.cs" />
+    <Compile Include="Model\FilmRoom.cs" />
     <Compile Include="Model\Province.cs" />
     <Compile Include="Model\Regency.cs" />
     <Compile Include="Model\Religion.cs" />
@@ -143,7 +91,7 @@
     <Compile Include="Param\CategoryParam.cs" />
     <Compile Include="Param\CinemaParam.cs" />
     <Compile Include="Param\FilmParam.cs" />
-    <Compile Include="Param\Film_RoomParam.cs" />
+    <Compile Include="Param\FilmRoomParam.cs" />
     <Compile Include="Param\ProvinceParam.cs" />
     <Compile Include="Param\RegencyParam.cs" />
     <Compile Include="Param\ReligionParam.cs" />
@@ -160,66 +108,27 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201902150832012_addingProvincies.resx">
-      <DependentUpon>201902150832012_addingProvincies.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902151456138_addingProvinces.resx">
-      <DependentUpon>201902151456138_addingProvinces.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902151741452_addingCategories.resx">
-      <DependentUpon>201902151741452_addingCategories.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902160138532_addingFilms.resx">
-      <DependentUpon>201902160138532_addingFilms.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902160612213_addingRatingCategory.resx">
-      <DependentUpon>201902160612213_addingRatingCategory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902170433020_addingTheaters.resx">
-      <DependentUpon>201902170433020_addingTheaters.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902170709331_addingReligions.resx">
-      <DependentUpon>201902170709331_addingReligions.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902170913470_addingRegency.resx">
-      <DependentUpon>201902170913470_addingRegency.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902171206452_addingSubDistricts.resx">
-      <DependentUpon>201902171206452_addingSubDistricts.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902171207480_addingVillages.resx">
-      <DependentUpon>201902171207480_addingVillages.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902171342349_addingAdmins.resx">
-      <DependentUpon>201902171342349_addingAdmins.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902172116372_addingUsers.resx">
-      <DependentUpon>201902172116372_addingUsers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902180153354_fixingProvinces.resx">
-      <DependentUpon>201902180153354_fixingProvinces.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902180201217_addingUsersAddress.resx">
-      <DependentUpon>201902180201217_addingUsersAddress.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902180328531_changePictiruToString.resx">
-      <DependentUpon>201902180328531_changePictiruToString.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902180416527_fixTable.resx">
-      <DependentUpon>201902180416527_fixTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902180427352_addingCinemas.resx">
-      <DependentUpon>201902180427352_addingCinemas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902180430518_addingRooms.resx">
-      <DependentUpon>201902180430518_addingRooms.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Cinemas.API.Core\Cinemas.API.Core.csproj">
       <Project>{7a9f02c3-f09c-4e92-a5d2-1bcb29ec3750}</Project>
       <Name>Cinemas.API.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201902180805027_addingFilmroom.resx">
+      <DependentUpon>201902180805027_addingFilmroom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902180828312_dropItem.resx">
+      <DependentUpon>201902180828312_dropItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902180830527_changeFilmRooms.resx">
+      <DependentUpon>201902180830527_changeFilmRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902180832390_dropFilmrooms.resx">
+      <DependentUpon>201902180832390_dropFilmrooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902180938455_addingFilmRooms.resx">
+      <DependentUpon>201902180938455_addingFilmRooms.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -58,6 +58,7 @@
     <Compile Include="Repository\ICategoryRepository.cs" />
     <Compile Include="Repository\ICinemaRepository.cs" />
     <Compile Include="Repository\IFilmRepository.cs" />
+    <Compile Include="Repository\IFilmRoomRepository.cs" />
     <Compile Include="Repository\IProvinceRepository.cs" />
     <Compile Include="Repository\IRegencyRepository.cs" />
     <Compile Include="Repository\IReligionRepository.cs" />
@@ -70,6 +71,7 @@
     <Compile Include="Repository\Master\CategoryRepository.cs" />
     <Compile Include="Repository\Master\CinemaRepository.cs" />
     <Compile Include="Repository\Master\FilmRepository.cs" />
+    <Compile Include="Repository\Master\FilmRoomRepository.cs" />
     <Compile Include="Repository\Master\ProvinceRepository.cs" />
     <Compile Include="Repository\Master\RegencyRepository.cs" />
     <Compile Include="Repository\Master\ReligionRepository.cs" />

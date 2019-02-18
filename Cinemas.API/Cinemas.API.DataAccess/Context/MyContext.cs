@@ -23,5 +23,6 @@ namespace Cinemas.API.DataAccess.Context
         public DbSet<User> Users { get; set; }
         public DbSet<Cinema> Cinemas { get; set; }
         public DbSet<Room> Rooms { get; set; }
+        public DbSet<FilmRoom> FilmRooms { get; set; }
     }
 }

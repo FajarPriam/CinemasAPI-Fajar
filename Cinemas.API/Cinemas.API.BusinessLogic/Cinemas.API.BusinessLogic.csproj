@@ -57,6 +57,7 @@
     <Compile Include="Service\IAdminService.cs" />
     <Compile Include="Service\ICategoryService.cs" />
     <Compile Include="Service\ICinemaService.cs" />
+    <Compile Include="Service\IFilmRoomService.cs" />
     <Compile Include="Service\IFilmService.cs" />
     <Compile Include="Service\IProvinceService.cs" />
     <Compile Include="Service\IRegencyService.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="Service\Master\AdminService.cs" />
     <Compile Include="Service\Master\CategoryService.cs" />
     <Compile Include="Service\Master\CinemaService.cs" />
+    <Compile Include="Service\Master\FilmRoomService.cs" />
     <Compile Include="Service\Master\FilmService.cs" />
     <Compile Include="Service\Master\ProvinceService.cs" />
     <Compile Include="Service\Master\RegencyService.cs" />
