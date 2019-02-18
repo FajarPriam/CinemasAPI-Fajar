@@ -42,3 +42,6 @@ D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\obj\D
 D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.fixingProvinces.resources
 D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.addingUsersAddress.resources
 D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.changePictiruToString.resources
+D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.fixTable.resources
+D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.addingCinemas.resources
+D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.addingRooms.resources

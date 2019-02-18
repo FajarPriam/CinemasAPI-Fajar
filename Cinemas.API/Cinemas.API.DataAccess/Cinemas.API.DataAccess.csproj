@@ -113,23 +113,41 @@
     <Compile Include="Migrations\201902180328531_changePictiruToString.Designer.cs">
       <DependentUpon>201902180328531_changePictiruToString.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201902180416527_fixTable.cs" />
+    <Compile Include="Migrations\201902180416527_fixTable.Designer.cs">
+      <DependentUpon>201902180416527_fixTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902180427352_addingCinemas.cs" />
+    <Compile Include="Migrations\201902180427352_addingCinemas.Designer.cs">
+      <DependentUpon>201902180427352_addingCinemas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902180430518_addingRooms.cs" />
+    <Compile Include="Migrations\201902180430518_addingRooms.Designer.cs">
+      <DependentUpon>201902180430518_addingRooms.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Admin.cs" />
     <Compile Include="Model\Category.cs" />
+    <Compile Include="Model\Cinema.cs" />
     <Compile Include="Model\Film.cs" />
+    <Compile Include="Model\Film_Room.cs" />
     <Compile Include="Model\Province.cs" />
     <Compile Include="Model\Regency.cs" />
     <Compile Include="Model\Religion.cs" />
+    <Compile Include="Model\Room.cs" />
     <Compile Include="Model\SubDistrict.cs" />
     <Compile Include="Model\Theater.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Model\Village.cs" />
     <Compile Include="Param\AdminParam.cs" />
     <Compile Include="Param\CategoryParam.cs" />
+    <Compile Include="Param\CinemaParam.cs" />
     <Compile Include="Param\FilmParam.cs" />
+    <Compile Include="Param\Film_RoomParam.cs" />
     <Compile Include="Param\ProvinceParam.cs" />
     <Compile Include="Param\RegencyParam.cs" />
     <Compile Include="Param\ReligionParam.cs" />
+    <Compile Include="Param\RoomParam.cs" />
     <Compile Include="Param\SubDistrictParam.cs" />
     <Compile Include="Param\TheaterParam.cs" />
     <Compile Include="Param\UserParam.cs" />
@@ -186,6 +204,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201902180328531_changePictiruToString.resx">
       <DependentUpon>201902180328531_changePictiruToString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902180416527_fixTable.resx">
+      <DependentUpon>201902180416527_fixTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902180427352_addingCinemas.resx">
+      <DependentUpon>201902180427352_addingCinemas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902180430518_addingRooms.resx">
+      <DependentUpon>201902180430518_addingRooms.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
