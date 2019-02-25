@@ -11,7 +11,7 @@ function LoadIndexProvince() {
 
     $.ajax({
         types: "GET",
-        url: "http://localhost:25246/api/Provinces",
+        url: "http://localhost:17940/api/Provinces",
         async: false,
         dataType: "json",
         success: function (data) {
@@ -36,7 +36,7 @@ function Save() {
 
     province.name = $('#Name').val();
     $.ajax({
-        url: 'http://localhost:25246/api/Provinces',
+        url: 'http://localhost:17940/api/Provinces',
         type: 'POST',
         dataType: 'json',
         data: province,
@@ -53,7 +53,7 @@ function Edit() {
     province.id = $('#Id').val();
     province.name = $('#Name').val();
     $.ajax({
-        url: "http://localhost:25246/api/Provinces/" + $('#Id').val(),
+        url: "http://localhost:17940/api/Provinces/" + $('#Id').val(),
         data: province,
         type: "PUT",
         dataType: "json",
@@ -68,7 +68,7 @@ function Edit() {
 
 function GetById(Id) {
     $.ajax({
-        url: "http://localhost:25246/api/Provinces/" + Id,
+        url: "http://localhost:17940/api/Provinces/" + Id,
         type: "GET",
         dataType: "json",
         success: function (result) {
@@ -93,7 +93,7 @@ function Delete(Id) {
         closeOnConfirm: false
     }, function () {
         $.ajax({
-            url: "http://localhost:25246/api/Provinces/" + Id,
+            url: "http://localhost:17940/api/Provinces/" + Id,
             type: "DELETE",
             success: function (response) {
                 swal({
@@ -114,9 +114,12 @@ function Delete(Id) {
 
 function ValidationSave() {
     var isAllValid = true;
-    if ($('#Name').val() == "" || ($('#Name').val() == " " )) {
+    if ($('#Name').val() == "" || ($('#Name').val() == " ")) {
         isAllValid = false;
         $('#Name').siblings('span.error').css('visibility', 'visible');
+    }
+    else {
+        $('#Name').siblings('span.error').css('visibility', 'hidden');
     }
     if (isAllValid) {
         Save();
@@ -129,6 +132,9 @@ function ValidationEdit() {
         isAllValid = false;
         $('#Name').siblings('span.error').css('visibility', 'visible');
     }
+    else {
+        $('#Name').siblings('span.error').css('visibility', 'hidden');
+    }
     if (isAllValid) {
         Edit();
     }
@@ -139,9 +145,7 @@ function HideAlert() {
 }
 
 function ClearScreen() {
-    $('#Name').val('');
     $('#Id').val('');
-    $('#Update').hide();
-    $('#Save').show();
+    $('#Name').val('');
     HideAlert();
 }

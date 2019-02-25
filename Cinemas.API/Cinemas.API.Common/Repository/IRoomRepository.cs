@@ -15,5 +15,9 @@ namespace Cinemas.API.Common.Repository
         bool Delete(int? Id);
         List<Room> Get();
         Room Get(int? Id);
+
+        List<Room> GetRoom(int? Id);
+
+        List<Room> GetRoomByCinema(int? Id);
     }
 }

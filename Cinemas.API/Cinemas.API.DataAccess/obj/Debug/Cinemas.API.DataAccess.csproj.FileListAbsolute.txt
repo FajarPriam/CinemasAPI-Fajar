@@ -1,34 +1,56 @@
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\Cinemas.API.DataAccess.exe.config
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\Cinemas.API.DataAccess.exe
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\Cinemas.API.DataAccess.pdb
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\Cinemas.API.Core.exe
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\EntityFramework.dll
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\Cinemas.API.Core.pdb
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\EntityFramework.xml
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.csprojResolveAssemblyReference.cache
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.exe
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.pdb
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.addingProvincies.resources
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.csproj.GenerateResource.Cache
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.addingProvinces.resources
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.addingCategories.resources
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\Cinemas.API.DataAccess.exe.config
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\Cinemas.API.DataAccess.exe
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\Cinemas.API.DataAccess.pdb
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\Cinemas.API.Core.exe
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\EntityFramework.dll
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\Cinemas.API.Core.pdb
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\EntityFramework.xml
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.exe
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.pdb
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.csprojResolveAssemblyReference.cache
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.addingFilmroom.resources
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.csproj.GenerateResource.Cache
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.dropItem.resources
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.changeFilmRooms.resources
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.dropFilmrooms.resources
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.addingFilmRooms.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\Cinemas.API.DataAccess.exe.config
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\Cinemas.API.DataAccess.exe
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\Cinemas.API.DataAccess.pdb
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\Cinemas.API.Core.exe
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\Cinemas.API.Core.pdb
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.exe
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.pdb
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsAddingProvinciesRegencies.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.csproj.GenerateResource.Cache
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsChangingProvinces.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsChangingProvincesParam.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsChangingProvincesParams.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsAddingSubDistrict.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsAddingVillage.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsAddingTheater.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsAddingCinema.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsAddingRestaurant.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsAddingRoom.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsAddingProduct.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsAddingCategory.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsAddingReligion.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsAddingUser.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsAddingFilmRoom.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsAddingReservation.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsAddingFilm.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsFixingFilmRoom.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsAddingAdmin.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsChangingDurationFilm.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsAddingSecretUser.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsAddingOrderProduct.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsAddingBuyTicket.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsFixingReservation.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsFixingOrderFood.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsFixingBuyTicket.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsFixingOrderProduct.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsFixingOrderProduct1.resources
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.IsFixingOrderProduct2.resources
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.DataAccess\bin\Debug\Cinemas.API.DataAccess.exe.config
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.DataAccess\bin\Debug\Cinemas.API.DataAccess.exe
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.DataAccess\bin\Debug\Cinemas.API.DataAccess.pdb
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.DataAccess\bin\Debug\Cinemas.API.Core.exe
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.DataAccess\bin\Debug\EntityFramework.dll
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.DataAccess\bin\Debug\Cinemas.API.Core.pdb
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.DataAccess\bin\Debug\EntityFramework.xml
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.csprojResolveAssemblyReference.cache
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.Migrations.addingTableall.resources
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.csproj.GenerateResource.Cache
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.exe
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.DataAccess\obj\Debug\Cinemas.API.DataAccess.pdb

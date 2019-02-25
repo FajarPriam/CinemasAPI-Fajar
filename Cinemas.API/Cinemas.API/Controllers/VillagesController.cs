@@ -1,4 +1,4 @@
-﻿using Cinemas.API.BusinessLogic.Service;
+﻿using Cinemas.API.BusinessLogic.Services;
 using Cinemas.API.DataAccess.Model;
 using Cinemas.API.DataAccess.Param;
 using System;
@@ -20,7 +20,6 @@ namespace Cinemas.API.Controllers
         {
             _villageService = villageService;
         }
-
         // GET: api/Villages
         public IEnumerable<Village> Get()
         {
@@ -49,6 +48,11 @@ namespace Cinemas.API.Controllers
         public void Delete(int id)
         {
             _villageService.Delete(id);
+        }
+
+        public IEnumerable<Village> GetVillage(int RId)
+        {
+            return _villageService.GetVillage(RId);
         }
     }
 }

@@ -1,19 +1,19 @@
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.Core\bin\Debug\Cinemas.API.Core.exe.config
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.Core\bin\Debug\Cinemas.API.Core.exe
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.Core\bin\Debug\Cinemas.API.Core.pdb
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.Core\bin\Debug\EntityFramework.dll
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.Core\bin\Debug\EntityFramework.SqlServer.dll
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.Core\bin\Debug\EntityFramework.xml
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.Core\bin\Debug\EntityFramework.SqlServer.xml
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.Core\obj\Debug\Cinemas.API.Core.exe
-D:\Bootcamp MII\Cinemas.API\Cinemas.API.Core\obj\Debug\Cinemas.API.Core.pdb
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.Core\bin\Debug\Cinemas.API.Core.exe.config
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.Core\bin\Debug\Cinemas.API.Core.exe
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.Core\bin\Debug\Cinemas.API.Core.pdb
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.Core\bin\Debug\EntityFramework.dll
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.Core\bin\Debug\EntityFramework.SqlServer.dll
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.Core\bin\Debug\EntityFramework.xml
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.Core\bin\Debug\EntityFramework.SqlServer.xml
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.Core\obj\Debug\Cinemas.API.Core.csprojResolveAssemblyReference.cache
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.Core\obj\Debug\Cinemas.API.Core.exe
-D:\Bootcamp MII\Github\CinemasAPI-Fajar\Cinemas.API\Cinemas.API.Core\obj\Debug\Cinemas.API.Core.pdb
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.Core\bin\Debug\Cinemas.API.Core.exe.config
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.Core\bin\Debug\Cinemas.API.Core.exe
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.Core\bin\Debug\Cinemas.API.Core.pdb
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.Core\bin\Debug\EntityFramework.dll
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.Core\bin\Debug\EntityFramework.xml
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.Core\obj\Debug\Cinemas.API.Core.exe
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.Core\obj\Debug\Cinemas.API.Core.pdb
+C:\Users\Walker\Documents\Visual Studio 2015\Projects\Cinemas.API\Cinemas.API.Core\obj\Debug\Cinemas.API.Core.csprojResolveAssemblyReference.cache
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.Core\bin\Debug\Cinemas.API.Core.exe.config
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.Core\bin\Debug\Cinemas.API.Core.exe
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.Core\bin\Debug\Cinemas.API.Core.pdb
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.Core\bin\Debug\EntityFramework.dll
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.Core\bin\Debug\EntityFramework.xml
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.Core\obj\Debug\Cinemas.API.Core.exe
+D:\Bootcamp MII\Github\CinemasAPI-Kessi\Cinemas.API.Core\obj\Debug\Cinemas.API.Core.pdb

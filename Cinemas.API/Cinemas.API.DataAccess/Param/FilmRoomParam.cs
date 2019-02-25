@@ -9,7 +9,7 @@ namespace Cinemas.API.DataAccess.Param
     public class FilmRoomParam
     {
         public DateTime ShowDate { get; set; }
-        public int Hour { get; set; }
+        public string Hour { get; set; }
         public int Price { get; set; }
         public int Films_Id { get; set; }
         public int Rooms_Id { get; set; }

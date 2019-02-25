@@ -652,7 +652,7 @@
       <param name="paths">Set of virtual paths for which to generate link tags.</param>
     </member>
     <member name="M:System.Web.Optimization.Styles.RenderFormat(System.String,System.String[])">
-      <summary>Renders link tags for a set of paths based on a format string.</summary>
+      <summary>Renders link tags for a set of paths based on  "m	Ðring.</summary>
       <returns>A HTML string containing the link tag or tags for the bundle.</returns>
       <param name="tagFormat">Format string for defining the rendered link tags.</param>
       <param name="paths">Set of virtual paths for which to generate link tags.</param>

@@ -78,5 +78,14 @@ namespace Cinemas.API.Common.Repository.Master
             return status;
         }
 
+        public List<Cinema> GetCinema(int? Id)
+        {
+            return myContext.Cinemas.Where(x => x.Theaters.Id == Id && x.IsDelete == false).ToList();
+        }
+
+        public List<Cinema> GetCinemaByTheater(int? Id)
+        {
+            return myContext.Cinemas.Where(x => x.Theaters.Id == Id && x.IsDelete == false).ToList();
+        }
     }
 }

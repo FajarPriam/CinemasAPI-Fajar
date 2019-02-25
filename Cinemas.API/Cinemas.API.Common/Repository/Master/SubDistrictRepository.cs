@@ -13,7 +13,7 @@ namespace Cinemas.API.Common.Repository.Master
     {
         MyContext myContext = new MyContext();
         SubDistrict subdistrict = new SubDistrict();
-        bool status = true;
+        bool status = false;
         public bool Delete(int? Id)
         {
             var result = 0;
@@ -72,6 +72,11 @@ namespace Cinemas.API.Common.Repository.Master
                 status = true;
             }
             return status;
+        }
+
+        public List<SubDistrict> GetSubDistrict(int? Id)
+        {
+            return myContext.SubDistricts.Where(x => x.Regencies.Id == Id && x.IsDelete == false).ToList();
         }
     }
 }

@@ -1,29 +1,27 @@
 ﻿$(document).ready(function () {
-    LoadIndexAdmins();
-    HideAlert();
-    ClearScreen();
+    LoadIndexAdmin();
+    hiddenAdminAlert();
     $('#table').DataTable({
-        "ajax": LoadIndexAdmins()
-    })
-})
+        "ajax": LoadIndexAdmin()
+    });
+});
 
-function LoadIndexAdmins() {
-
+function LoadIndexAdmin() {
     $.ajax({
-        types: "GET",
-        url: "http://localhost:25246/api/Admins",
+        url: 'http://localhost:17940/api/Admins',
+        type: 'GET',
         async: false,
-        dataType: "json",
-        success: function (data) {
+        dataType: 'json',
+        success: function (admin) {
             var html = '';
             var i = 1;
-            $.each(data, function (index, val) {
+            $.each(admin, function (index, val) {
                 html += '<tr>';
                 html += '<td>' + i + '</td>';
                 html += '<td>' + val.Username + '</td>';
                 html += '<td>' + val.Password + '</td>';
-                html += '<td> <a href="#" onclick="return GetById(' + val.Id + ')">Edit</a>';
-                html += ' | <a href="#" onclick="return Delete(' + val.Id + ')">Delete</a> </td>';
+                html += '<td> <a href="#" onclick="return GetById(' + val.Id + ');">Edit</a> ';
+                html += '| <a href="#" onclick="return Delete(' + val.Id + ')">Delete</a></td>';
                 html += '</tr>';
                 i++;
             });
@@ -34,57 +32,27 @@ function LoadIndexAdmins() {
 
 function Save() {
     var admin = new Object();
-
-    admin.username = $('#Username').val();
-    admin.password = $('#Password').val();
+    admin.Username = $('#Username').val();
+    admin.Password = $('#Password').val();
     $.ajax({
-        url: 'http://localhost:25246/api/Admins',
+        url: 'http://localhost:17940/api/Admins',
         type: 'POST',
         dataType: 'json',
         data: admin,
-        success: function (result) {
-            LoadIndexAdmins();
-            $('#myModal').modal('hide');
+        success: function (response) {
+            swal({
+                title: "Saved!",
+                text: "That data has been inserted!",
+                type: "success"
+            },
+            function () {
+                window.location.href = '/Admins/Index/';
+            });
+        },
+        error: function (response) {
+            swal("Oops", "We couldn't connect to the server!", "error");
         }
     });
-    ClearScreen();
-}
-
-function Edit() {
-    var admin = new Object();
-    admin.id = $('#Id').val();
-    admin.username = $('#Username').val();
-    admin.password = $('#Password').val();
-    $.ajax({
-        url: "http://localhost:25246/api/Admins/" + $('#Id').val(),
-        data: admin,
-        type: "PUT",
-        dataType: "json",
-        success: function (result) {
-            LoadIndexAdmins();
-            $('#myModal').modal('hide');
-            $('#Username').val('');
-            $('#Password').val('');
-        }
-    });
-    ClearScreen();
-}
-
-function GetById(Id) {
-    $.ajax({
-        url: "http://localhost:25246/api/Admins/" + Id,
-        type: "GET",
-        dataType: "json",
-        success: function (result) {
-            $('#Id').val(result.Id);
-            $('#Username').val(result.Username);
-            $('#Password').val(result.Password);
-
-            $('#myModal').modal('show');
-            $('#Update').show();
-            $('#Save').hide();
-        }
-    })
 }
 
 function Delete(Id) {
@@ -98,7 +66,7 @@ function Delete(Id) {
         closeOnConfirm: false
     }, function () {
         $.ajax({
-            url: "http://localhost:25246/api/Admins/" + Id,
+            url: "http://localhost:17940/api/Admins/" + Id,
             type: "DELETE",
             success: function (response) {
                 swal({
@@ -107,7 +75,7 @@ function Delete(Id) {
                     type: "success"
                 },
                 function () {
-                    window.location.href = '/admins/Index/';
+                    window.location.href = '/Admins/Index/';
                 });
             },
             error: function (response) {
@@ -117,46 +85,104 @@ function Delete(Id) {
     });
 }
 
-function ValidationSave() {
-    var isAllValid = true;
-    if ($('#Username').val() == "" || ($('#Username').val() == " ")) {
-        isAllValid = false;
+function GetById(Id) {
+    $.ajax({
+        url: 'http://localhost:17940/api/Admins/' + Id,
+        type: 'GET',
+        dataType: 'json',
+        success: function (result) {
+            $('#Id').val(result.Id);
+            $('#Username').val(result.Username);
+            $('#Password').val(result.Password);
+
+            $('#myModal').modal('show');
+            $('#Save').hide();
+            $('#Update').show();
+        }
+    })
+}
+
+function Edit() {
+    var admin = new Object();
+    admin.Id = $('#Id').val();
+    admin.Username = $('#Username').val();
+    admin.Password = $('#Password').val();
+    $.ajax({
+        url: 'http://localhost:17940/api/Admins/' + admin.Id,
+        type: 'PUT',
+        data: admin,
+        dataType: 'json',
+        success: function (response) {
+            swal({
+                title: "Updated!",
+                text: "your data has been updated!",
+                type: "success"
+            },
+            function () {
+                window.location.href = '/Admins/Index/';
+                $('#Id').val('');
+                $('#Username').val('');
+                $('#Password').val('');
+            });
+        },
+        error: function (response) {
+            swal("Oops", "We couldn't connect to the server!", "error");
+        }
+    });
+}
+
+function validateInsertAdmin() {
+    var allValid = true;
+    if ($('#Username').val() == "" || $('#Username').val() == " ") {
+        allValid = false;
         $('#Username').siblings('span.error').css('visibility', 'visible');
     }
-    if ($('#Password').val() == "" || ($('#Password').val() == " ")) {
-        isAllValid = false;
+    else {
+        $('#Username').siblings('span.error').css('visibility', 'hidden');
+    }
+    if ($('#Password').val() == "" || $('#Password').val() == " ") {
+        allValid = false;
         $('#Password').siblings('span.error').css('visibility', 'visible');
     }
-    if (isAllValid) {
+    else {
+        $('#Password').siblings('span.error').css('visibility', 'hidden');
+    }
+
+    if (allValid == true) {
         Save();
     }
 }
 
-function ValidationEdit() {
-    var isAllValid = true;
-    if ($('#Username').val() == "" || ($('#Username').val() == " ")) {
-        isAllValid = false;
+function validateEditAdmin() {
+    var allValid = true;
+    if ($('#Username').val() == "" || $('#Username').val() == " ") {
+        allValid = false;
         $('#Username').siblings('span.error').css('visibility', 'visible');
     }
-    if ($('#Password').val() == "" || ($('#Password').val() == " ")) {
-        isAllValid = false;
+    else {
+        $('#Username').siblings('span.error').css('visibility', 'hidden');
+    }
+    if ($('#Password').val() == "" || $('#Password').val() == " ") {
+        allValid = false;
         $('#Password').siblings('span.error').css('visibility', 'visible');
     }
-    if (isAllValid) {
+    else {
+        $('#Password').siblings('span.error').css('visibility', 'hidden');
+    }
+
+    if (allValid == true) {
         Edit();
     }
 }
 
-function HideAlert() {
+function hiddenAdminAlert() {
     $('#Username').siblings('span.error').css('visibility', 'hidden');
     $('#Password').siblings('span.error').css('visibility', 'hidden');
 }
 
-function ClearScreen() {
+function clearAdminScreen() {
+    $('#Id').val('');
     $('#Username').val('');
     $('#Password').val('');
-    $('#Id').val('');
-    $('#Update').hide();
-    $('#Save').show();
-    HideAlert();
+    hiddenAdminAlert();
 }

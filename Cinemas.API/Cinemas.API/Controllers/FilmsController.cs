@@ -1,4 +1,4 @@
-﻿using Cinemas.API.BusinessLogic.Service;
+﻿using Cinemas.API.BusinessLogic.Services;
 using Cinemas.API.DataAccess.Model;
 using Cinemas.API.DataAccess.Param;
 using System;
@@ -15,11 +15,11 @@ namespace Cinemas.API.Controllers
     public class FilmsController : ApiController
     {
         private readonly IFilmService _filmService;
+
         public FilmsController(IFilmService filmService)
         {
             _filmService = filmService;
         }
-
         // GET: api/Films
         public IEnumerable<Film> Get()
         {
@@ -29,8 +29,7 @@ namespace Cinemas.API.Controllers
         // GET: api/Films/5
         public Film Get(int id)
         {
-            return _filmService.Get(id);
-        }
+            return _filmService.Get(id);        }
 
         // POST: api/Films
         public void Post(FilmParam filmParam)

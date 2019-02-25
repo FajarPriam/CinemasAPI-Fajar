@@ -1,0 +1,107 @@
+﻿
+<div class="container">
+    <hr />
+    @*<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="">Create New</button><br /><br />*@
+    <table class="table table-hover" id="table">
+        <thead>
+            <tr>
+                <th>
+                    No.
+                </th>
+                <th>
+                    Title
+                </th>
+                <th>
+                    Show Date
+                </th>
+                <th>
+                    Show Time
+                </th>
+                <th>
+                    Duration
+                </th>
+                <th>
+                    Room Name
+                </th>
+                <th>
+                    Cinemas Name
+                </th>
+                <th>
+                    Cinema Address
+                </th>
+                <th>
+                    Available Seat
+                </th>
+                <th>
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+    </table>
+    <div class="details">
+        <h2>
+            Buy Ticket
+        </h2>
+        <table class="table table-responsive">
+            <tr>
+                <td>Theater</td>
+                <td>Cinema</td>
+                <td>Room</td>
+                <td>Film</td>
+                <td>Price</td>
+                <td>&nbsp;</td>
+                <td>Action</td>
+            </tr>
+            <tr class="mycontainer" id="mainrow">
+                <td>
+                    <select id="Theaters" class="theather form-control" onchange="LoadCinemaByTheater(this)">
+                        <option>Select</option>
+                    </select>
+                    <span class="error">Select Theater</span>
+                </td>
+                <td>
+                    <select id="Cinemas" class="cinema form-control" onchange="LoadRoomByCinema(this)">
+                        <option>Select</option>
+                    </select>
+                    <span class="error">Select Cinema</span>
+                </td>
+                <td>
+                    <select id="Rooms" class="cinema form-control" onchange="LoadFilmRoomByRoom(this)">
+                        <option>Select</option>
+                    </select>
+                    <span class="error">Select Room</span>
+                </td>
+                <td>
+                    <select id="Films" class="product form-control" onchange="LoadPriceByFilm(this)">
+                        <option>Select</option>
+                    </select>
+                    <span class="error">Select Film</span>
+                </td>
+                <td>
+                    <input type="text" class="price form-control" id="Prices" disabled="disabled" />
+                </td>
+                <td>
+                    <input type="button" id="add" value="add" style="width:80px" class="btn btn-success" />
+                </td>
+            </tr>
+        </table>
+        <div id="orderItems">
+            <table class="table table-responsive" id="orderdetailsItems"></table>
+            <span id="orderItemError" style="color:red"></span>
+        </div>
+        <div style="padding:10px 0; text-align:right">
+            <input id="submit" type="button" value="Save Order" class="btn btn-warning" style="padding:10px 20px" />
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script src="~/Scripts/Sweetalert/sweetalert.min.js"></script>
+    <link href="~/Scripts/Sweetalert/sweetalert.css" rel="stylesheet" />
+    <script src="~/Scripts/Datatables/jquery.dataTables.min.js"></script>
+    <link href="~/Scripts/Datatables/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="~/Scripts/Transactions/BuyTicketsMaster/UserBuyTicket.js"></script>
+    @Scripts.Render("~/bundles/jqueryval")
+}

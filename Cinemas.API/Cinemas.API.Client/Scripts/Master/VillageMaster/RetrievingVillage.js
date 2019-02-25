@@ -9,7 +9,7 @@
 
 function LoadIndexVillage() {
     $.ajax({
-        url: 'http://localhost:25246/api/Villages',
+        url: 'http://localhost:17940/api/Villages',
         type: 'GET',
         async: false,
         dataType: 'json',
@@ -33,7 +33,7 @@ function LoadIndexVillage() {
 
 function LoadSubDistrictCombo() {
     $.ajax({
-        url: 'http://localhost:25246/api/SubDistricts',
+        url: 'http://localhost:17940/api/SubDistricts',
         type: 'GET',
         dataType: 'json',
         success: function (result) {
@@ -52,7 +52,7 @@ function Save() {
     village.Name = $('#Name').val();
     village.SubDistricts_Id = $('#SubDistricts').val();
     $.ajax({
-        url: 'http://localhost:25246/api/Villages',
+        url: 'http://localhost:17940/api/Villages',
         type: 'POST',
         dataType: 'json',
         data: village,
@@ -83,7 +83,7 @@ function Delete(Id) {
         closeOnConfirm: false
     }, function () {
         $.ajax({
-            url: "http://localhost:25246/api/Villages/" + Id,
+            url: "http://localhost:17940/api/Villages/" + Id,
             type: "DELETE",
             success: function (response) {
                 swal({
@@ -104,7 +104,7 @@ function Delete(Id) {
 
 function GetById(Id) {
     $.ajax({
-        url: 'http://localhost:25246/api/Villages/' + Id,
+        url: 'http://localhost:17940/api/Villages/' + Id,
         type: 'GET',
         dataType: 'json',
         success: function (result) {
@@ -125,7 +125,7 @@ function Edit() {
     village.Name = $('#Name').val();
     village.SubDistricts_Id = $('#SubDistricts').val();
     $.ajax({
-        url: 'http://localhost:25246/api/Villages/' + village.Id,
+        url: 'http://localhost:17940/api/Villages/' + village.Id,
         type: 'PUT',
         data: village,
         dataType: 'json',
@@ -153,9 +153,15 @@ function validateInsertVillage() {
         allValid = false;
         $('#Name').siblings('span.error').css('visibility', 'visible');
     }
+    else {
+        $('#Name').siblings('span.error').css('visibility', 'hidden');
+    }
     if ($('#SubDistricts').val() == 0 || $('#SubDistricts').val() == "0") {
         allValid = false;
         $('#SubDistricts').siblings('span.error').css('visibility', 'visible');
+    }
+    else {
+        $('#SubDistricts').siblings('span.error').css('visibility', 'hidden');
     }
 
     if (allValid == true) {
@@ -169,9 +175,15 @@ function validateEditVillage() {
         allValid = false;
         $('#Name').siblings('span.error').css('visibility', 'visible');
     }
+    else {
+        $('#Name').siblings('span.error').css('visibility', 'hidden');
+    }
     if ($('#SubDistricts').val() == 0 || $('#SubDistricts').val() == "0") {
         allValid = false;
         $('#SubDistricts').siblings('span.error').css('visibility', 'visible');
+    }
+    else {
+        $('#SubDistricts').siblings('span.error').css('visibility', 'hidden');
     }
 
     if (allValid == true) {

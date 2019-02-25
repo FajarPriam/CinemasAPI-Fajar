@@ -31,13 +31,13 @@ namespace Cinemas.API.Common.Repository.Master
 
         public List<Admin> Get()
         {
-            var get = myContext.Admins.Where(x => x.IsDelete == false).ToList();
+            var get = myContext.Admin.Where(x => x.IsDelete == false).ToList();
             return get;
         }
 
         public Admin Get(int? Id)
         {
-            Admin admin = myContext.Admins.Where(x => x.Id == Id).SingleOrDefault();
+            Admin admin = myContext.Admin.Where(x => x.Id == Id).SingleOrDefault();
             return admin;
         }
 
@@ -48,7 +48,7 @@ namespace Cinemas.API.Common.Repository.Master
             admin.Username = adminParam.Username;
             admin.Password = adminParam.Password;
             admin.CreateDate = DateTimeOffset.Now.LocalDateTime;
-            myContext.Admins.Add(admin);
+            myContext.Admin.Add(admin);
             result = myContext.SaveChanges();
             if (result > 0)
             {
@@ -58,6 +58,11 @@ namespace Cinemas.API.Common.Repository.Master
             {
                 return false;
             }
+        }
+
+        public Admin Login(string username, string password)
+        {
+            return myContext.Admin.Where(x => (x.IsDelete == false) && (x.Username == username) && (x.Password == password)).SingleOrDefault();
         }
 
         public bool Update(int? Id, AdminParam adminParam)

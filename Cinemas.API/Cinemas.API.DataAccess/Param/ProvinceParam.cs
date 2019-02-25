@@ -8,7 +8,6 @@ namespace Cinemas.API.DataAccess.Param
 {
     public class ProvinceParam
     {
-        public int Id { get; set; }
         public string Name { get; set; }
     }
 }

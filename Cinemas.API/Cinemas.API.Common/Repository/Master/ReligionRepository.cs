@@ -11,14 +11,15 @@ namespace Cinemas.API.Common.Repository.Master
 {
     public class ReligionRepository : IReligionRepository
     {
-        bool status = false;
         MyContext myContext = new MyContext();
+        Religion religion = new Religion();
+        bool status = false;
         public bool Delete(int? Id)
         {
             var result = 0;
-            Religion religion = Get(Id);
-            religion.IsDelete = true;
-            religion.DeleteDate = DateTimeOffset.Now.LocalDateTime;
+            Religion getReligion = Get(Id);
+            getReligion.IsDelete = true;
+            getReligion.DeleteDate = DateTimeOffset.Now.LocalDateTime;
             result = myContext.SaveChanges();
             if (result > 0)
             {
@@ -32,49 +33,45 @@ namespace Cinemas.API.Common.Repository.Master
 
         public List<Religion> Get()
         {
-            var get = myContext.Religions.Where(x => x.IsDelete == false).ToList();
-            return get;
+            var getReligion = myContext.Religions.Where(x => x.IsDelete == false).ToList();
+            return getReligion;
         }
 
         public Religion Get(int? Id)
         {
-            Religion religion = myContext.Religions.Where(x => x.Id == Id).SingleOrDefault();
-            return religion;
+            var getReligion = myContext.Religions.Find(Id);
+            return getReligion;
         }
 
         public bool Insert(ReligionParam religionParam)
         {
             var result = 0;
-            var religion = new Religion();
             religion.Name = religionParam.Name;
             religion.CreateDate = DateTimeOffset.Now.LocalDateTime;
+            religion.IsDelete = false;
             myContext.Religions.Add(religion);
             result = myContext.SaveChanges();
+
             if (result > 0)
             {
-                return true;
+                status = true;
             }
-            else
-            {
-                return false;
-            }
+            return status;
         }
 
         public bool Update(int? Id, ReligionParam religionParam)
         {
             var result = 0;
-            var get = Get(Id);
-            get.Name = religionParam.Name;
-            get.UpdateDate = DateTimeOffset.Now.LocalDateTime;
+            Religion getReligion = Get(Id);
+            getReligion.Name = religionParam.Name;
+            getReligion.UpdateDate = DateTimeOffset.Now.LocalDateTime;
             result = myContext.SaveChanges();
+
             if (result > 0)
             {
-                return true;
+                status = true;
             }
-            else
-            {
-                return false;
-            }
+            return status;
         }
     }
 }

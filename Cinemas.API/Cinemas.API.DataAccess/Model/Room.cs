@@ -1,4 +1,4 @@
-﻿using Cinemas.API.Core.Core;
+﻿using Cinemas.API.Core.BaseModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;

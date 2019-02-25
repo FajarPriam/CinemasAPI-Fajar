@@ -1,4 +1,4 @@
-﻿using Cinemas.API.BusinessLogic.Service;
+﻿using Cinemas.API.BusinessLogic.Services;
 using Cinemas.API.DataAccess.Model;
 using Cinemas.API.DataAccess.Param;
 using System;
@@ -48,6 +48,15 @@ namespace Cinemas.API.Controllers
         public void Delete(int id)
         {
             _cinemaService.Delete(id);
+        }
+        public IEnumerable<Cinema> GetCinema(int RId)
+        {
+            return _cinemaService.GetCinema(RId);
+        }
+
+        public IEnumerable<Cinema> GetCinemaByTheater(int RId)
+        {
+            return _cinemaService.GetCinemaByTheater(RId);
         }
     }
 }

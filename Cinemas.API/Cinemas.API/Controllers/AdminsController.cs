@@ -1,4 +1,4 @@
-﻿using Cinemas.API.BusinessLogic.Service;
+﻿using Cinemas.API.BusinessLogic.Services;
 using Cinemas.API.DataAccess.Model;
 using Cinemas.API.DataAccess.Param;
 using System;
@@ -15,6 +15,7 @@ namespace Cinemas.API.Controllers
     public class AdminsController : ApiController
     {
         private readonly IAdminService _adminService;
+
         public AdminsController(IAdminService adminService)
         {
             _adminService = adminService;
@@ -48,5 +49,10 @@ namespace Cinemas.API.Controllers
         {
             _adminService.Delete(id);
         }
+
+        //public Admin Login(string Username, string Password)
+        //{
+        //    return _adminService.Login(Username, Password);
+        //}
     }
 }

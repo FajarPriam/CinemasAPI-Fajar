@@ -1,4 +1,4 @@
-﻿using Cinemas.API.Core.Core;
+﻿using Cinemas.API.Core.BaseModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ namespace Cinemas.API.DataAccess.Model
         public string Poster { get; set; }
         public string Synopsis { get; set; }
         public string Description { get; set; }
-        public string Duration { get; set; }
+        public int Duration { get; set; }
         public string Status { get; set; }
         public virtual Category Categories { get; set; }
     }

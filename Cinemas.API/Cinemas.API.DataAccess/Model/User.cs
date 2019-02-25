@@ -1,4 +1,4 @@
-﻿using Cinemas.API.Core.Core;
+﻿using Cinemas.API.Core.BaseModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,19 +9,18 @@ namespace Cinemas.API.DataAccess.Model
 {
     public class User : BaseModel
     {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Gender { get; set; }
+        public string Phone { get; set; }
+        public string Email { get; set; }
+        public int Amount { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
-        public string First_Name { get; set; }
-        public string Last_Name { get; set; }
-        public string Gender { get; set; }
-        public int Phone { get; set; }
-        public int Amount { get; set; }
         public string Address { get; set; }
-        public virtual Religion Religions { get; set; }
-        public virtual Province Provinces { get; set; }
-        public virtual Regency Regencies { get; set; }
-        public virtual SubDistrict SubDistricts { get; set; }
+        public string SecretQuestion { get; set; }
+        public string SecretAnswer {get; set;}
         public virtual Village Villages { get; set; }
-
+        public virtual Religion Religions { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿using Cinemas.API.BusinessLogic.Service;
+﻿using Cinemas.API.BusinessLogic.Services;
 using Cinemas.API.DataAccess.Model;
 using Cinemas.API.DataAccess.Param;
 using System;

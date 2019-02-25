@@ -1,10 +1,4 @@
 ﻿
-@{
-    ViewBag.Title = "Index";
-}
-
-@*<h2>Index</h2>*@
-
 <div class="container">
     <hr />
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="">Create New</button><br /><br />
@@ -66,9 +60,8 @@
 @section Scripts {
     <script src="~/Scripts/Sweetalert/sweetalert.min.js"></script>
     <link href="~/Scripts/Sweetalert/sweetalert.css" rel="stylesheet" />
-    <script src="~/Scripts/Datatable/jquery.dataTables.min.js"></script>
-    <link href="~/Scripts/Datatable/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="~/Scripts/Datatables/jquery.dataTables.min.js"></script>
+    <link href="~/Scripts/Datatables/jquery.dataTables.min.css" rel="stylesheet" />
     <script src="~/Scripts/Master/VillageMaster/RetrievingVillage.js"></script>
-
     @Scripts.Render("~/bundles/jqueryval")
 }

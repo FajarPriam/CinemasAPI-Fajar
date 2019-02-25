@@ -11,14 +11,15 @@ namespace Cinemas.API.Common.Repository.Master
 {
     public class CategoryRepository : ICategoryRepository
     {
-        bool status = false;
         MyContext myContext = new MyContext();
+        Category category = new Category();
+        bool status = false;
         public bool Delete(int? Id)
         {
             var result = 0;
-            Category category = Get(Id);
-            category.IsDelete = true;
-            category.DeleteDate = DateTimeOffset.Now.LocalDateTime;
+            Category getCategory = Get(Id);
+            getCategory.IsDelete = true;
+            getCategory.DeleteDate = DateTimeOffset.Now.LocalDateTime;
             result = myContext.SaveChanges();
             if (result > 0)
             {
@@ -32,49 +33,45 @@ namespace Cinemas.API.Common.Repository.Master
 
         public List<Category> Get()
         {
-            var get = myContext.Categories.Where(x => x.IsDelete == false).ToList();
-            return get;
+            var getCategory = myContext.Categories.Where(x => x.IsDelete == false).ToList();
+            return getCategory;
         }
 
         public Category Get(int? Id)
         {
-            Category category = myContext.Categories.Where(x => x.Id == Id).SingleOrDefault();
-            return category;
+            var getCategory = myContext.Categories.Find(Id);
+            return getCategory;
         }
 
         public bool Insert(CategoryParam categoryParam)
         {
             var result = 0;
-            var category = new Category();
             category.Name = categoryParam.Name;
             category.CreateDate = DateTimeOffset.Now.LocalDateTime;
+            category.IsDelete = false;
             myContext.Categories.Add(category);
             result = myContext.SaveChanges();
+
             if (result > 0)
             {
-                return true;
+                status = true;
             }
-            else
-            {
-                return false;
-            }
+            return status;
         }
 
         public bool Update(int? Id, CategoryParam categoryParam)
         {
             var result = 0;
-            var get = Get(Id);
-            get.Name = categoryParam.Name;
-            get.UpdateDate = DateTimeOffset.Now.LocalDateTime;
+            Category getCategory = Get(Id);
+            getCategory.Name = categoryParam.Name;
+            getCategory.UpdateDate = DateTimeOffset.Now.LocalDateTime;
             result = myContext.SaveChanges();
+
             if (result > 0)
             {
-                return true;
+                status = true;
             }
-            else
-            {
-                return false;
-            }
+            return status;
         }
     }
 }

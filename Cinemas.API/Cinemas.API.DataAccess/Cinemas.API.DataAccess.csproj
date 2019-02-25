@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A4CFBBB6-5C4B-4192-860F-D60C8BED5A54}</ProjectGuid>
+    <ProjectGuid>{9FA1AD8B-304A-4108-80CC-B95274BC9130}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Cinemas.API.DataAccess</RootNamespace>
@@ -53,25 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\MyContext.cs" />
-    <Compile Include="Migrations\201902180805027_addingFilmroom.cs" />
-    <Compile Include="Migrations\201902180805027_addingFilmroom.Designer.cs">
-      <DependentUpon>201902180805027_addingFilmroom.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902180828312_dropItem.cs" />
-    <Compile Include="Migrations\201902180828312_dropItem.Designer.cs">
-      <DependentUpon>201902180828312_dropItem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902180830527_changeFilmRooms.cs" />
-    <Compile Include="Migrations\201902180830527_changeFilmRooms.Designer.cs">
-      <DependentUpon>201902180830527_changeFilmRooms.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902180832390_dropFilmrooms.cs" />
-    <Compile Include="Migrations\201902180832390_dropFilmrooms.Designer.cs">
-      <DependentUpon>201902180832390_dropFilmrooms.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902180938455_addingFilmRooms.cs" />
-    <Compile Include="Migrations\201902180938455_addingFilmRooms.Designer.cs">
-      <DependentUpon>201902180938455_addingFilmRooms.cs</DependentUpon>
+    <Compile Include="Migrations\201902211554346_addingTableall.cs" />
+    <Compile Include="Migrations\201902211554346_addingTableall.Designer.cs">
+      <DependentUpon>201902211554346_addingTableall.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Admin.cs" />
@@ -79,9 +63,14 @@
     <Compile Include="Model\Cinema.cs" />
     <Compile Include="Model\Film.cs" />
     <Compile Include="Model\FilmRoom.cs" />
+    <Compile Include="Model\Transactions\BuyTicket.cs" />
+    <Compile Include="Model\Transactions\OrderProduct.cs" />
+    <Compile Include="Model\Product.cs" />
     <Compile Include="Model\Province.cs" />
     <Compile Include="Model\Regency.cs" />
     <Compile Include="Model\Religion.cs" />
+    <Compile Include="Model\TransactionMaster\Reservation.cs" />
+    <Compile Include="Model\Restaurant.cs" />
     <Compile Include="Model\Room.cs" />
     <Compile Include="Model\SubDistrict.cs" />
     <Compile Include="Model\Theater.cs" />
@@ -92,9 +81,14 @@
     <Compile Include="Param\CinemaParam.cs" />
     <Compile Include="Param\FilmParam.cs" />
     <Compile Include="Param\FilmRoomParam.cs" />
+    <Compile Include="Param\Transactions\BuyTicketParam.cs" />
+    <Compile Include="Param\Transactions\OrderProductParam.cs" />
+    <Compile Include="Param\ProductParam.cs" />
     <Compile Include="Param\ProvinceParam.cs" />
     <Compile Include="Param\RegencyParam.cs" />
     <Compile Include="Param\ReligionParam.cs" />
+    <Compile Include="Param\TransactionMaster\ReservationParam.cs" />
+    <Compile Include="Param\RestaurantParam.cs" />
     <Compile Include="Param\RoomParam.cs" />
     <Compile Include="Param\SubDistrictParam.cs" />
     <Compile Include="Param\TheaterParam.cs" />
@@ -109,25 +103,13 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Cinemas.API.Core\Cinemas.API.Core.csproj">
-      <Project>{7a9f02c3-f09c-4e92-a5d2-1bcb29ec3750}</Project>
+      <Project>{4b8c5681-f055-4903-a1e6-51239bd686cc}</Project>
       <Name>Cinemas.API.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201902180805027_addingFilmroom.resx">
-      <DependentUpon>201902180805027_addingFilmroom.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902180828312_dropItem.resx">
-      <DependentUpon>201902180828312_dropItem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902180830527_changeFilmRooms.resx">
-      <DependentUpon>201902180830527_changeFilmRooms.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902180832390_dropFilmrooms.resx">
-      <DependentUpon>201902180832390_dropFilmrooms.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902180938455_addingFilmRooms.resx">
-      <DependentUpon>201902180938455_addingFilmRooms.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201902211554346_addingTableall.resx">
+      <DependentUpon>201902211554346_addingTableall.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

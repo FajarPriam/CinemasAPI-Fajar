@@ -9,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{90C0894F-9069-4873-AB05-4D37AD987A17}</ProjectGuid>
+    <ProjectGuid>{6C8B16B4-81DC-42A5-94C9-1962998BAE3C}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -256,13 +256,22 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminsController.cs" />
+    <Compile Include="Controllers\BuyTicketsController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\CinemasController.cs" />
+    <Compile Include="Controllers\FilmRoomsController.cs" />
     <Compile Include="Controllers\FilmsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginsController.cs" />
+    <Compile Include="Controllers\LoginUsersController.cs" />
+    <Compile Include="Controllers\OrderProductsController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\ProvincesController.cs" />
     <Compile Include="Controllers\RegenciesController.cs" />
+    <Compile Include="Controllers\RegistersController.cs" />
     <Compile Include="Controllers\ReligionsController.cs" />
+    <Compile Include="Controllers\ReservationsController.cs" />
+    <Compile Include="Controllers\RestaurantsController.cs" />
     <Compile Include="Controllers\RoomsController.cs" />
     <Compile Include="Controllers\SubDistrictsController.cs" />
     <Compile Include="Controllers\TheatersController.cs" />
@@ -348,19 +357,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Cinemas.API.BusinessLogic\Cinemas.API.BusinessLogic.csproj">
-      <Project>{10ce0511-4328-417b-b1b4-e152cb4727f0}</Project>
+      <Project>{1204bd19-59a7-43ca-9a5e-35e1869d2941}</Project>
       <Name>Cinemas.API.BusinessLogic</Name>
     </ProjectReference>
     <ProjectReference Include="..\Cinemas.API.Common\Cinemas.API.Common.csproj">
-      <Project>{694910fe-6062-4239-9dfa-791cb1b835ef}</Project>
+      <Project>{9126ce3b-0474-4157-82bb-f0bb8c866c14}</Project>
       <Name>Cinemas.API.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\Cinemas.API.Core\Cinemas.API.Core.csproj">
-      <Project>{7a9f02c3-f09c-4e92-a5d2-1bcb29ec3750}</Project>
+      <Project>{4b8c5681-f055-4903-a1e6-51239bd686cc}</Project>
       <Name>Cinemas.API.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Cinemas.API.DataAccess\Cinemas.API.DataAccess.csproj">
-      <Project>{a4cfbbb6-5c4b-4192-860f-d60c8bed5a54}</Project>
+      <Project>{9fa1ad8b-304a-4108-80cc-b95274bc9130}</Project>
       <Name>Cinemas.API.DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
@@ -380,9 +389,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>25246</DevelopmentServerPort>
+          <DevelopmentServerPort>17940</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:25246/</IISUrl>
+          <IISUrl>http://localhost:17940/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

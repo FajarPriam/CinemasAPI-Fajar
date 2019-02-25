@@ -1,25 +1,13 @@
 ﻿
-@{
-    ViewBag.Title = "Index";
-}
-
-@*<h2>Index</h2>*@
-
 <div class="container">
     <hr />
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="clearUserScreen();">Create New</button><br /><br />
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="">Create New</button><br /><br />
     <table class="table table-hover" id="table">
         <thead>
             <tr>
                 <th>
                     No.
                 </th>
-                @*<th>
-                    Username
-                </th>
-                <th>
-                    Password
-                </th>*@
                 <th>
                     First Name
                 </th>
@@ -33,23 +21,29 @@
                     Phone
                 </th>
                 <th>
+                    Email
+                </th>
+                <th>
                     Amount
                 </th>
+                @*<th>
+                    Username
+                </th>
+                <th>
+                    Password
+                </th>*@
                 <th>
                     Address
                 </th>
-                <th>
-                    Religion
-                </th>
                 @*<th>
-                    Province Name
+                    Secret Question
                 </th>
                 <th>
-                    Regency Name
-                </th>
-                <th>
-                    Sub District Name
+                    Secret Answer
                 </th>*@
+                <th>
+                    Religion Name
+                </th>
                 <th>
                     Village Name
                 </th>
@@ -65,7 +59,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" onclick="clearUserScreen();">×</button>
+                <button type="button" class="close" data-dismiss="modal">×</button>
                 <h4 class="modal-title" id="myModalLabel">User Form</h4>
             </div>
             <div class="modal-body">
@@ -75,32 +69,22 @@
                         <input type="text" class="form-control" id="Id" placeholder="Id" disabled="disabled" />
                     </div>
                     <div class="form-group">
-                        <label for="Username">Username</label>
-                        <input type="text" class="form-control" id="Username" placeholder="Username" />
-                        <span class="error">Valid Username Required</span>
-                    </div>
-                    <div class="form-group">
-                        <label for="Password">Password</label>
-                        <input type="text" class="form-control" id="Password" placeholder="Password" />
-                        <span class="error">Valid Password Required</span>
-                    </div>
-                    <div class="form-group">
-                        <label for="First_Name">First_Name</label>
-                        <input type="text" class="form-control" id="First_Name" placeholder="First Name" />
+                        <label for="FirstName">First Name</label>
+                        <input type="text" class="form-control" id="FirstName" placeholder="First Name" />
                         <span class="error">Valid First Name Required</span>
                     </div>
                     <div class="form-group">
-                        <label for="Last_Name">Last_Name</label>
-                        <input type="text" class="form-control" id="Last_Name" placeholder="Last Name" />
+                        <label for="LastName">Last Name</label>
+                        <input type="text" class="form-control" id="LastName" placeholder="Last Name" />
                         <span class="error">Valid Last Name Required</span>
                     </div>
                     <div class="form-group">
                         <label for="Gender">Gender</label>
                         <select id="Gender" data-placement="Choose" class="form-control">
-                            <option>L</option>
-                            <option>P</option>
+                            <option>Male</option>
+                            <option>Female</option>
                         </select>
-                        <span style="color:red" class="error"> Valid Rating Required</span>
+                        <span class="error">Valid Gender Required</span>
                     </div>
                     <div class="form-group">
                         <label for="Phone">Phone</label>
@@ -108,9 +92,25 @@
                         <span class="error">Valid Phone Required</span>
                     </div>
                     <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="text" class="form-control" id="Email" placeholder="Email" />
+                        <span class="error">Valid Email Required</span>
+                    </div>
+                    <div class="form-group">
                         <label for="Amount">Amount</label>
-                        <input type="text" class="form-control" id="Amount" placeholder="Amount" />
+                        <input type="number" class="form-control" id="Amount" placeholder="Amount" />
                         <span class="error">Valid Amount Required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Username">Username</label>
+                        <input type="text" class="form-control" id="Username" placeholder="Username" />
+                        <span class="error">Valid Username Required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Password">Password</label>
+                        <input type="password" class="form-control" id="Password" placeholder="Password" />
+                        <span class="error">Valid Password Required</span>
+                        <input type="checkbox" onclick="ShowPass()"> Show Password
                     </div>
                     <div class="form-group">
                         <label for="Address">Address</label>
@@ -118,29 +118,43 @@
                         <span class="error">Valid Address Required</span>
                     </div>
                     <div class="form-group">
-                        <label for="Name">Religion Name</label>
+                        <label for="SecretQuestion">Secret Question</label>
+                        <select id="SecretQuestion" data-placement="Choose" class="form-control">
+                            <option>What was the name of your first stuffed animal?</option>
+                            <option>What was your childhood nickname?</option>
+                            <option>What is the name of your favorite childhood friend?</option>
+                        </select>
+                        <span class="error">Valid Secret Question Required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="SecretAnswer">Secret Answer</label>
+                        <input type="text" class="form-control" id="SecretAnswer" placeholder="Secret Answer" />
+                        <span class="error">Valid Secret Answer Required</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Religions">Religion Name</label>
                         <select id="Religions" data-placement="Choose" class="form-control"></select>
                         <span class="error">Valid Religion Required</span>
                     </div>
                     <div class="form-group">
-                        <label for="Name">Province Name</label>
-                        <select id="Provinces" data-placement="Choose" class="form-control"></select>
+                        <label for="Provinces">Province Name</label>
+                        <select id="Provinces" data-placement="Choose" class="form-control" onchange="LoadRegencyCombo();"></select>
                         <span class="error">Valid Province Required</span>
                     </div>
                     <div class="form-group">
-                        <label for="Name">Regency Name</label>
-                        <select id="Regencies" data-placement="Choose" class="form-control"></select>
-                        <span class="error">Valid Regency Required</span>
+                        <label for="Regencies">Regency Name</label>
+                        <select id="Regencies" data-placement="Choose" class="form-control" onchange="LoadSubDistrictCombo();"></select>
+                        <span class="error">Valid Rengency Required</span>
                     </div>
                     <div class="form-group">
-                        <label for="Name">Sub District Name</label>
-                        <select id="SubDistricts" data-placement="Choose" class="form-control"></select>
+                        <label for="SubDistricts">Sub District Name</label>
+                        <select id="SubDistricts" data-placement="Choose" class="form-control" onchange="LoadVillageCombo();"></select>
                         <span class="error">Valid Sub District Required</span>
                     </div>
                     <div class="form-group">
-                        <label for="Name">Village Name</label>
+                        <label for="Villages">Village Name</label>
                         <select id="Villages" data-placement="Choose" class="form-control"></select>
-                        <span class="error">Valid Villages Required</span>
+                        <span class="error">Valid Village Required</span>
                     </div>
                 </form>
             </div>
@@ -157,8 +171,8 @@
 @section Scripts {
     <script src="~/Scripts/Sweetalert/sweetalert.min.js"></script>
     <link href="~/Scripts/Sweetalert/sweetalert.css" rel="stylesheet" />
-    <script src="~/Scripts/Datatable/jquery.dataTables.min.js"></script>
-    <link href="~/Scripts/Datatable/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="~/Scripts/Datatables/jquery.dataTables.min.js"></script>
+    <link href="~/Scripts/Datatables/jquery.dataTables.min.css" rel="stylesheet" />
     <script src="~/Scripts/Master/UserMaster/RetrievingUser.js"></script>
 
     @Scripts.Render("~/bundles/jqueryval")

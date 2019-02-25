@@ -8,8 +8,9 @@
 });
 
 function LoadIndexRegency() {
+    debugger;
     $.ajax({
-        url: 'http://localhost:25246/api/Regencies',
+        url: 'http://localhost:17940/api/Regencies',
         type: 'GET',
         async: false,
         dataType: 'json',
@@ -33,7 +34,7 @@ function LoadIndexRegency() {
 
 function LoadProvincyCombo() {
     $.ajax({
-        url: 'http://localhost:25246/api/Provinces',
+        url: 'http://localhost:17940/api/Provinces',
         type: 'GET',
         dataType: 'json',
         success: function (result) {
@@ -52,7 +53,7 @@ function Save() {
     regency.Name = $('#Name').val();
     regency.Provinces_Id = $('#Provinces').val();
     $.ajax({
-        url: 'http://localhost:25246/api/Regencies',
+        url: 'http://localhost:17940/api/Regencies',
         type: 'POST',
         dataType: 'json',
         data: regency,
@@ -83,7 +84,7 @@ function Delete(Id) {
         closeOnConfirm: false
     }, function () {
         $.ajax({
-            url: "http://localhost:25246/api/Regencies/" + Id,
+            url: "http://localhost:17940/api/Regencies/" + Id,
             type: "DELETE",
             success: function (response) {
                 swal({
@@ -104,7 +105,7 @@ function Delete(Id) {
 
 function GetById(Id) {
     $.ajax({
-        url: 'http://localhost:25246/api/Regencies/' + Id,
+        url: 'http://localhost:17940/api/Regencies/' + Id,
         type: 'GET',
         dataType: 'json',
         success: function (result) {
@@ -125,7 +126,7 @@ function Edit() {
     regency.Name = $('#Name').val();
     regency.Provinces_Id = $('#Provinces').val();
     $.ajax({
-        url: 'http://localhost:25246/api/Regencies/' + regency.Id,
+        url: 'http://localhost:17940/api/Regencies/' + regency.Id,
         type: 'PUT',
         data: regency,
         dataType: 'json',
@@ -153,9 +154,15 @@ function validateInsertRegency() {
         allValid = false;
         $('#Name').siblings('span.error').css('visibility', 'visible');
     }
+    else {
+        $('#Name').siblings('span.error').css('visibility', 'hidden');
+    }
     if ($('#Provinces').val() == 0 || $('#Provinces').val() == "0") {
         allValid = false;
         $('#Provinces').siblings('span.error').css('visibility', 'visible');
+    }
+    else {
+        $('#Provinces').siblings('span.error').css('visibility', 'hidden');
     }
 
     if (allValid == true) {
@@ -169,8 +176,14 @@ function validateEditRegency() {
         allValid = false;
         $('#Name').siblings('span.error').css('visibility', 'visible');
     }
+    else {
+        $('#Name').siblings('span.error').css('visibility', 'hidden');
+    }
     if ($('#Provinces').val() == 0 || $('#Provinces').val() == "0") {
         allValid = false;
+        $('#Provinces').siblings('span.error').css('visibility', 'visible');
+    }
+    else {
         $('#Provinces').siblings('span.error').css('visibility', 'visible');
     }
 

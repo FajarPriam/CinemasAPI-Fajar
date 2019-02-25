@@ -1,4 +1,4 @@
-﻿using Cinemas.API.BusinessLogic.Service;
+﻿using Cinemas.API.BusinessLogic.Services;
 using Cinemas.API.DataAccess.Model;
 using Cinemas.API.DataAccess.Param;
 using System;
@@ -20,7 +20,6 @@ namespace Cinemas.API.Controllers
         {
             _subdistrictService = subdistrictService;
         }
-
         // GET: api/SubDistricts
         public IEnumerable<SubDistrict> Get()
         {
@@ -49,6 +48,11 @@ namespace Cinemas.API.Controllers
         public void Delete(int id)
         {
             _subdistrictService.Delete(id);
+        }
+
+        public IEnumerable<SubDistrict> GetSubDistrict(int RId)
+        {
+            return _subdistrictService.GetSubDistrict(RId);
         }
     }
 }

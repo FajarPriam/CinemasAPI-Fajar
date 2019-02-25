@@ -13,7 +13,7 @@ namespace Cinemas.API.Common.Repository.Master
     {
         MyContext myContext = new MyContext();
         Village village = new Village();
-        bool status = true;
+        bool status = false;
         public bool Delete(int? Id)
         {
             var result = 0;
@@ -72,6 +72,11 @@ namespace Cinemas.API.Common.Repository.Master
                 status = true;
             }
             return status;
+        }
+
+        public List<Village> GetVillage(int? Id)
+        {
+            return myContext.Villages.Where(x => x.SubDistricts.Id == Id && x.IsDelete == false).ToList();
         }
     }
 }

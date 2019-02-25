@@ -41,6 +41,16 @@ namespace Cinemas.API.Common.Repository.Master
             return getRoom;
         }
 
+        public List<Room> GetRoom(int? Id)
+        {
+            return myContext.Rooms.Where(x => x.Cinemas.Theaters.Id == Id && x.IsDelete == false).ToList();
+        }
+
+        public List<Room> GetRoomByCinema(int? Id)
+        {
+            return myContext.Rooms.Where(x => x.Cinemas.Id == Id && x.IsDelete == false).ToList();
+        }
+
         public bool Insert(RoomParam roomParam)
         {
             var result = 0;

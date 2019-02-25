@@ -1,4 +1,4 @@
-﻿using Cinemas.API.BusinessLogic.Service;
+﻿using Cinemas.API.BusinessLogic.Services;
 using Cinemas.API.DataAccess.Model;
 using Cinemas.API.DataAccess.Param;
 using System;
@@ -20,7 +20,6 @@ namespace Cinemas.API.Controllers
         {
             _regencyService = regencyService;
         }
-
         // GET: api/Regencies
         public IEnumerable<Regency> Get()
         {
@@ -49,6 +48,11 @@ namespace Cinemas.API.Controllers
         public void Delete(int id)
         {
             _regencyService.Delete(id);
+        }
+
+        public IEnumerable<Regency> GetRegency(int RId)
+        {
+            return _regencyService.GetRegency(RId);
         }
     }
 }

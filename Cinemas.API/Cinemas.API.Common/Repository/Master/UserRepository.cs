@@ -12,14 +12,14 @@ namespace Cinemas.API.Common.Repository.Master
     public class UserRepository : IUserRepository
     {
         MyContext myContext = new MyContext();
-        Village village = new Village();
-        bool status = true;
+        User user = new User();
+        bool status = false;
         public bool Delete(int? Id)
         {
             var result = 0;
-            User user = Get(Id);
-            user.IsDelete = true;
-            user.DeleteDate = DateTimeOffset.Now.LocalDateTime;
+            User getUser = Get(Id);
+            getUser.IsDelete = true;
+            getUser.DeleteDate = DateTimeOffset.Now.LocalDateTime;
             result = myContext.SaveChanges();
             if (result > 0)
             {
@@ -33,62 +33,60 @@ namespace Cinemas.API.Common.Repository.Master
 
         public List<User> Get()
         {
-            var get = myContext.Users.Where(x => x.IsDelete == false).ToList();
-            return get;
+            var getUser = myContext.Users.Where(x => x.IsDelete == false).ToList();
+            return getUser;
         }
 
         public User Get(int? Id)
         {
-            User user = myContext.Users.Where(x => x.Id == Id).SingleOrDefault();
-            return user;
+            var getUser = myContext.Users.Find(Id);
+            return getUser;
         }
 
         public bool Insert(UserParam userParam)
         {
             var result = 0;
-            var user = new User();
-            user.Username = userParam.Username;
-            user.Password = userParam.Password;
-            user.First_Name = userParam.First_Name;
-            user.Last_Name = userParam.Last_Name;
+            user.FirstName = userParam.FirstName;
+            user.LastName = userParam.LastName;
             user.Gender = userParam.Gender;
             user.Phone = userParam.Phone;
+            user.Email = userParam.Email;
             user.Amount = userParam.Amount;
+            user.Username = userParam.Username;
+            user.Password = userParam.Password;
             user.Address = userParam.Address;
+            user.SecretQuestion = userParam.SecretQuestion;
+            user.SecretAnswer = userParam.SecretAnswer;
             user.Religions = myContext.Religions.Find(userParam.Religions_Id);
-            user.Provinces = myContext.Provinces.Find(userParam.Provinces_Id);
-            user.Regencies = myContext.Regencies.Find(userParam.Regencies_Id);
-            user.SubDistricts = myContext.SubDistricts.Find(userParam.SubDistricts_Id);
             user.Villages = myContext.Villages.Find(userParam.Villages_Id);
             user.CreateDate = DateTimeOffset.Now.LocalDateTime;
+            user.IsDelete = false;
             myContext.Users.Add(user);
             result = myContext.SaveChanges();
+
             if (result > 0)
             {
-                return true;
+                status = true;
             }
-            else
-            {
-                return false;
-            }
+            return status;
         }
 
         public bool Update(int? Id, UserParam userParam)
         {
             var result = 0;
             User getUser = Get(Id);
-            getUser.Username = userParam.Username;
-            getUser.Password = userParam.Password;
-            getUser.First_Name = userParam.First_Name;
-            getUser.Last_Name = userParam.Last_Name;
+            getUser.FirstName = userParam.FirstName;
+            getUser.LastName = userParam.LastName;
             getUser.Gender = userParam.Gender;
             getUser.Phone = userParam.Phone;
+            getUser.Email = userParam.Email;
             getUser.Amount = userParam.Amount;
+            getUser.Username = userParam.Username;
+            getUser.Password = userParam.Password;
             getUser.Address = userParam.Address;
+            getUser.SecretQuestion = userParam.SecretQuestion;
+            getUser.SecretAnswer = userParam.SecretAnswer;
             getUser.Religions = myContext.Religions.Find(userParam.Religions_Id);
-            getUser.Provinces = myContext.Provinces.Find(userParam.Provinces_Id);
-            getUser.Regencies = myContext.Regencies.Find(userParam.Regencies_Id);
-            getUser.SubDistricts = myContext.SubDistricts.Find(userParam.SubDistricts_Id);
             getUser.Villages = myContext.Villages.Find(userParam.Villages_Id);
             getUser.UpdateDate = DateTimeOffset.Now.LocalDateTime;
             result = myContext.SaveChanges();
@@ -98,6 +96,11 @@ namespace Cinemas.API.Common.Repository.Master
                 status = true;
             }
             return status;
+        }
+
+        public User Login(string username, string password)
+        {
+            return myContext.Users.Where(x => (x.IsDelete == false) && (x.Username == username) && (x.Password == password)).SingleOrDefault();
         }
     }
 }

@@ -1,28 +1,26 @@
 ﻿$(document).ready(function () {
-    LoadIndexReligions();
-    HideAlert();
-    ClearScreen();
+    LoadIndexReligion();
+    hiddenReligionAlert();
     $('#table').DataTable({
-        "ajax": LoadIndexReligions()
-    })
-})
+        "ajax": LoadIndexReligion()
+    });
+});
 
-function LoadIndexReligions() {
-
+function LoadIndexReligion() {
     $.ajax({
-        types: "GET",
-        url: "http://localhost:25246/api/Religions",
+        url: 'http://localhost:17940/api/Religions',
+        type: 'GET',
         async: false,
-        dataType: "json",
-        success: function (data) {
+        dataType: 'json',
+        success: function (religion) {
             var html = '';
             var i = 1;
-            $.each(data, function (index, val) {
+            $.each(religion, function (index, val) {
                 html += '<tr>';
                 html += '<td>' + i + '</td>';
                 html += '<td>' + val.Name + '</td>';
-                html += '<td> <a href="#" onclick="return GetById(' + val.Id + ')">Edit</a>';
-                html += ' | <a href="#" onclick="return Delete(' + val.Id + ')">Delete</a> </td>';
+                html += '<td> <a href="#" onclick="return GetById(' + val.Id + ');">Edit</a> ';
+                html += '| <a href="#" onclick="return Delete(' + val.Id + ')">Delete</a></td>';
                 html += '</tr>';
                 i++;
             });
@@ -33,53 +31,26 @@ function LoadIndexReligions() {
 
 function Save() {
     var religion = new Object();
-
-    religion.name = $('#Name').val();
+    religion.Name = $('#Name').val();
     $.ajax({
-        url: 'http://localhost:25246/api/Religions',
+        url: 'http://localhost:17940/api/Religions',
         type: 'POST',
         dataType: 'json',
         data: religion,
-        success: function (result) {
-            LoadIndexReligions();
-            $('#myModal').modal('hide');
+        success: function (response) {
+            swal({
+                title: "Saved!",
+                text: "That data has been inserted!",
+                type: "success"
+            },
+            function () {
+                window.location.href = '/Religions/Index/';
+            });
+        },
+        error: function (response) {
+            swal("Oops", "We couldn't connect to the server!", "error");
         }
     });
-    ClearScreen();
-}
-
-function Edit() {
-    var religion = new Object();
-    religion.id = $('#Id').val();
-    religion.name = $('#Name').val();
-    $.ajax({
-        url: "http://localhost:25246/api/Religions/" + $('#Id').val(),
-        data: religion,
-        type: "PUT",
-        dataType: "json",
-        success: function (result) {
-            LoadIndexReligions();
-            $('#myModal').modal('hide');
-            $('#Name').val('');
-        }
-    });
-    ClearScreen();
-}
-
-function GetById(Id) {
-    $.ajax({
-        url: "http://localhost:25246/api/Religions/" + Id,
-        type: "GET",
-        dataType: "json",
-        success: function (result) {
-            $('#Id').val(result.Id);
-            $('#Name').val(result.Name);
-
-            $('#myModal').modal('show');
-            $('#Update').show();
-            $('#Save').hide();
-        }
-    })
 }
 
 function Delete(Id) {
@@ -93,7 +64,7 @@ function Delete(Id) {
         closeOnConfirm: false
     }, function () {
         $.ajax({
-            url: "http://localhost:25246/api/Religions/" + Id,
+            url: "http://localhost:17940/api/Religions/" + Id,
             type: "DELETE",
             success: function (response) {
                 swal({
@@ -112,36 +83,86 @@ function Delete(Id) {
     });
 }
 
-function ValidationSave() {
-    var isAllValid = true;
-    if ($('#Name').val() == "" || ($('#Name').val() == " ")) {
-        isAllValid = false;
+function GetById(Id) {
+    $.ajax({
+        url: 'http://localhost:17940/api/Religions/' + Id,
+        type: 'GET',
+        dataType: 'json',
+        success: function (result) {
+            $('#Id').val(result.Id);
+            $('#Name').val(result.Name);
+
+            $('#myModal').modal('show');
+            $('#Save').hide();
+            $('#Update').show();
+        }
+    })
+}
+
+function Edit() {
+    var religion = new Object();
+    religion.Id = $('#Id').val();
+    religion.Name = $('#Name').val();
+    $.ajax({
+        url: 'http://localhost:17940/api/Religions/' + religion.Id,
+        type: 'PUT',
+        data: religion,
+        dataType: 'json',
+        success: function (response) {
+            swal({
+                title: "Updated!",
+                text: "your data has been updated!",
+                type: "success"
+            },
+            function () {
+                window.location.href = '/Religions/Index/';
+                $('#Id').val('');
+                $('#Name').val('');
+            });
+        },
+        error: function (response) {
+            swal("Oops", "We couldn't connect to the server!", "error");
+        }
+    });
+}
+
+function validateInsertReligion() {
+    var allValid = true;
+    if ($('#Name').val() == "" || $('#Name').val() == " ") {
+        allValid = false;
         $('#Name').siblings('span.error').css('visibility', 'visible');
     }
-    if (isAllValid) {
+    else {
+        $('#Name').siblings('span.error').css('visibility', 'hidden');
+    }
+
+    if (allValid == true) {
         Save();
     }
 }
 
-function ValidationEdit() {
-    var isAllValid = true;
-    if ($('#Name').val() == "" || ($('#Name').val() == " ")) {
-        isAllValid = false;
+function validateEditReligion() {
+    var allValid = true;
+    if ($('#Name').val() == "" || $('#Name').val() == " ") {
+        allValid = false;
         $('#Name').siblings('span.error').css('visibility', 'visible');
     }
-    if (isAllValid) {
+    else {
+        $('#Name').siblings('span.error').css('visibility', 'hidden');
+    }
+
+    if (allValid == true) {
         Edit();
     }
 }
 
-function HideAlert() {
+function hiddenReligionAlert() {
     $('#Name').siblings('span.error').css('visibility', 'hidden');
 }
 
-function ClearScreen() {
-    $('#Name').val('');
+function clearReligionScreen() {
     $('#Id').val('');
-    $('#Update').hide();
-    $('#Save').show();
-    HideAlert();
+    $('#Name').val('');
+    hiddenReligionAlert();
 }
+

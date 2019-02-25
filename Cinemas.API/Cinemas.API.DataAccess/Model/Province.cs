@@ -1,4 +1,4 @@
-﻿using Cinemas.API.Core.Core;
+﻿using Cinemas.API.Core.BaseModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +9,6 @@ namespace Cinemas.API.DataAccess.Model
 {
     public class Province : BaseModel
     {
-        public string Name { get; set; }
+        public string Name { get; set;}
     }
 }

@@ -11,6 +11,7 @@ namespace Cinemas.API.Common.Repository.Master
 {
     public class FilmRepository : IFilmRepository
     {
+
         bool status = false;
         MyContext myContext = new MyContext();
         public bool Delete(int? Id)
@@ -46,7 +47,7 @@ namespace Cinemas.API.Common.Repository.Master
         {
             var result = 0;
             var film = new Film();
-            film.Categories = myContext.Categories.Find(filmParam.Categories);
+            film.Categories = myContext.Categories.Find(filmParam.Categories_Id);
             film.Title = filmParam.Title;
             film.Rating = filmParam.Rating;
             film.Synopsis = filmParam.Synopsis;
@@ -70,7 +71,7 @@ namespace Cinemas.API.Common.Repository.Master
         {
             var result = 0;
             var get = Get(Id);
-            get.Categories = myContext.Categories.Find(filmParam.Categories);
+            get.Categories = myContext.Categories.Find(filmParam.Categories_Id);
             get.Title = filmParam.Title;
             get.Rating = filmParam.Rating;
             get.Synopsis = filmParam.Synopsis;

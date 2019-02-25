@@ -41,11 +41,21 @@ namespace Cinemas.API.Common.Repository.Master
             return filmRoom;
         }
 
+        public List<FilmRoom> GetFilmRoom(int? Id)
+        {
+            return myContext.FilmRooms.Where(x => x.Rooms.Cinemas.Id == Id && x.IsDelete == false).ToList();
+        }
+
+        public List<FilmRoom> GetFilmRoomByRoom(int? Id)
+        {
+            return myContext.FilmRooms.Where(x => x.Rooms.Id == Id && x.IsDelete == false).ToList();
+        }
+
         public bool Insert(FilmRoomParam filmRoomParam)
         {
             var result = 0;
             var filmRoom = new FilmRoom();
-            filmRoom.ShowDate = DateTimeOffset.Now.LocalDateTime;
+            filmRoom.ShowDate = filmRoomParam.ShowDate;
             filmRoom.Hour = filmRoomParam.Hour;
             filmRoom.Price = filmRoomParam.Price;
             filmRoom.Films = myContext.Films.Find(filmRoomParam.Films_Id);
@@ -66,7 +76,7 @@ namespace Cinemas.API.Common.Repository.Master
         {
             var result = 0;
             var get = Get(Id);
-            get.ShowDate = DateTimeOffset.Now.LocalDateTime;
+            get.ShowDate = filmRoomParam.ShowDate;
             get.Hour = filmRoomParam.Hour;
             get.Price = filmRoomParam.Price;
             get.Films = myContext.Films.Find(filmRoomParam.Films_Id);

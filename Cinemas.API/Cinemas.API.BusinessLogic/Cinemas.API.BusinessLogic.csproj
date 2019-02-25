@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{10CE0511-4328-417B-B1B4-E152CB4727F0}</ProjectGuid>
+    <ProjectGuid>{1204BD19-59A7-43CA-9A5E-35E1869D2941}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Cinemas.API.BusinessLogic</RootNamespace>
@@ -54,32 +54,42 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service\IAdminService.cs" />
-    <Compile Include="Service\ICategoryService.cs" />
-    <Compile Include="Service\ICinemaService.cs" />
-    <Compile Include="Service\IFilmRoomService.cs" />
-    <Compile Include="Service\IFilmService.cs" />
-    <Compile Include="Service\IProvinceService.cs" />
-    <Compile Include="Service\IRegencyService.cs" />
-    <Compile Include="Service\IReligionService.cs" />
-    <Compile Include="Service\IRoomService.cs" />
-    <Compile Include="Service\ISubDistrictService.cs" />
-    <Compile Include="Service\ITheaterService.cs" />
-    <Compile Include="Service\IUserService.cs" />
-    <Compile Include="Service\IVillageService.cs" />
-    <Compile Include="Service\Master\AdminService.cs" />
-    <Compile Include="Service\Master\CategoryService.cs" />
-    <Compile Include="Service\Master\CinemaService.cs" />
-    <Compile Include="Service\Master\FilmRoomService.cs" />
-    <Compile Include="Service\Master\FilmService.cs" />
-    <Compile Include="Service\Master\ProvinceService.cs" />
-    <Compile Include="Service\Master\RegencyService.cs" />
-    <Compile Include="Service\Master\ReligionService.cs" />
-    <Compile Include="Service\Master\RoomService.cs" />
-    <Compile Include="Service\Master\SubDistrictService.cs" />
-    <Compile Include="Service\Master\TheaterService.cs" />
-    <Compile Include="Service\Master\UserService.cs" />
-    <Compile Include="Service\Master\VillageService.cs" />
+    <Compile Include="Services\IAdminService.cs" />
+    <Compile Include="Services\IBuyTicketService.cs" />
+    <Compile Include="Services\ICategoryService.cs" />
+    <Compile Include="Services\ICinemaService.cs" />
+    <Compile Include="Services\IFilmRoomService.cs" />
+    <Compile Include="Services\IFilmService.cs" />
+    <Compile Include="Services\IOrderProductService.cs" />
+    <Compile Include="Services\IProductService.cs" />
+    <Compile Include="Services\IProvinceService.cs" />
+    <Compile Include="Services\IRegencyService.cs" />
+    <Compile Include="Services\IReligionService.cs" />
+    <Compile Include="Services\IReservationService.cs" />
+    <Compile Include="Services\IRestaurantService.cs" />
+    <Compile Include="Services\IRoomService.cs" />
+    <Compile Include="Services\ISubDistrictService.cs" />
+    <Compile Include="Services\ITheaterService.cs" />
+    <Compile Include="Services\IUserService.cs" />
+    <Compile Include="Services\IVillageService.cs" />
+    <Compile Include="Services\Master\AdminService.cs" />
+    <Compile Include="Services\Master\BuyTicketService.cs" />
+    <Compile Include="Services\Master\CategoryService.cs" />
+    <Compile Include="Services\Master\CinemaService.cs" />
+    <Compile Include="Services\Master\FilmRoomService.cs" />
+    <Compile Include="Services\Master\FilmService.cs" />
+    <Compile Include="Services\Master\OrderProductService.cs" />
+    <Compile Include="Services\Master\ProductService.cs" />
+    <Compile Include="Services\Master\ProvinceService.cs" />
+    <Compile Include="Services\Master\RegencyService.cs" />
+    <Compile Include="Services\Master\ReligionService.cs" />
+    <Compile Include="Services\Master\ReservationService.cs" />
+    <Compile Include="Services\Master\RestaurantService.cs" />
+    <Compile Include="Services\Master\RoomService.cs" />
+    <Compile Include="Services\Master\SubDistrictService.cs" />
+    <Compile Include="Services\Master\TheaterService.cs" />
+    <Compile Include="Services\Master\UserService.cs" />
+    <Compile Include="Services\Master\VillageService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -87,15 +97,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Cinemas.API.Common\Cinemas.API.Common.csproj">
-      <Project>{694910fe-6062-4239-9dfa-791cb1b835ef}</Project>
+      <Project>{9126ce3b-0474-4157-82bb-f0bb8c866c14}</Project>
       <Name>Cinemas.API.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\Cinemas.API.Core\Cinemas.API.Core.csproj">
-      <Project>{7a9f02c3-f09c-4e92-a5d2-1bcb29ec3750}</Project>
+      <Project>{4b8c5681-f055-4903-a1e6-51239bd686cc}</Project>
       <Name>Cinemas.API.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Cinemas.API.DataAccess\Cinemas.API.DataAccess.csproj">
-      <Project>{a4cfbbb6-5c4b-4192-860f-d60c8bed5a54}</Project>
+      <Project>{9fa1ad8b-304a-4108-80cc-b95274bc9130}</Project>
       <Name>Cinemas.API.DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
